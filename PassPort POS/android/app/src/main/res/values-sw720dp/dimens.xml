@@ -1,0 +1,80 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="button_size">110dp</dimen>
+    <dimen name="sys_button_size">66.5dp</dimen>
+    <dimen name="button_corners">12.2dp</dimen>
+    <dimen name="ten_top">18sp</dimen>
+    <dimen name="ten_button">24sp</dimen>
+    <dimen name="sys_button_text_smallest">16sp</dimen>
+    <dimen name="sys_button_text_small">20sp</dimen>
+    <dimen name="sys_button_text_big">28sp</dimen>
+
+    <dimen name="simpletooltip_overlay_circle_offset">10dp</dimen>
+    <dimen name="simpletooltip_margin">10dp</dimen>
+    <dimen name="simpletooltip_padding">8dp</dimen>
+    <dimen name="simpletooltip_arrow_width">30dp</dimen>
+    <dimen name="simpletooltip_arrow_height">15dp</dimen>
+    <dimen name="simpletooltip_animation_padding">4dp</dimen>
+    <dimen name="Department_menu_width">57dp</dimen>
+    <dimen name="pointer_width">72dp</dimen>
+    <dimen name="side_nav_menu">97dp</dimen>
+    <dimen name="side_nav_text">90dp</dimen>
+    <dimen name="side_nav_btn_height">275dp</dimen>
+    <dimen name="side_nav_btn_padding">65dp</dimen>
+    <item name="receipt_size_weight" format="float" type="dimen">1.7</item>
+    <dimen name="receipt_qunt_box">70dp</dimen>
+    <item name="receipt_void_btn_weight" format="float" type="dimen">2.2</item>
+    <item name="receipt_save_btn_weight" format="float" type="dimen">2.2</item>
+    <dimen name="receipt_save_btn_bottom">19dp</dimen>
+    <dimen name="receipt_save_btn_top">19dp</dimen>
+    <dimen name="receipt_save_btn_txt_size">22sp</dimen>
+    <dimen name="receipt_table_txt_size">20sp</dimen>
+    <item name="receipt_table_txt_size_prog" format="float" type="dimen">20.0</item>
+
+    <dimen name="receipt_row_size">29sp</dimen>
+    <item name="receipt_row_modi_size" format="float" type="dimen">22.0</item>
+
+    <dimen name="receipt_collect_btn_bottom">26dp</dimen>
+    <dimen name="receipt_collect_btn_top">26dp</dimen>
+    <dimen name="receipt_collect_btn_txt_size">22sp</dimen>
+
+    <dimen name="receipt_ll_margin_left">12dp</dimen>
+    <dimen name="receipt_ll_margin_right">24dp</dimen>
+
+    <!-- qtypopup-->
+
+
+    <dimen name="frame_padding">25dp</dimen>
+    <dimen name="layout_height">60dp</dimen>
+    <dimen name="layout_margin_top">25dp</dimen>
+    <dimen name="btn_width">275dp</dimen>
+    <dimen name="btn_height">75dp</dimen>
+    <dimen name="btn_text_size">25sp</dimen>
+
+    <dimen name="qty_text_size">28sp</dimen>
+    <dimen name="ll_padding">6dp</dimen>
+    <dimen name="btn_size_both">45dp</dimen>
+    <!--edititem popup-->
+    <dimen name="btn_padding_top">25dp</dimen>
+    <dimen name="btn_padding_bottom">25dp</dimen>
+
+    <!--Drop Down-->
+    <dimen name="padding_top_bottom">20dp</dimen>
+    <dimen name="text_size">24sp</dimen>
+
+    <!--loginscreen-->
+    <dimen name="logo_ll_height">200dp</dimen>
+    <dimen name="logo_ll_widht">250dp</dimen>
+    <dimen name="spin_ll_minwidht">450dp</dimen>
+    <dimen name="bottom_height">120dp</dimen>
+
+    <!--reports-->
+    <dimen name="title_txt">24sp</dimen>
+
+    <dimen name="menu_list_dividerHeight">18dp</dimen>
+    <dimen name="menu_list_textsize">26sp</dimen>
+
+</resources>

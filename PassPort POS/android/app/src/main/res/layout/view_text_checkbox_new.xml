@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@android:color/white">
+
+    <!--<com.pos.passport.ui.AutoFitTextView-->
+    <TextView
+        android:id="@+id/item_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_name"
+        android:layout_weight="1"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:textSize="20sp"
+        android:layout_gravity="center_vertical|left"
+        android:gravity="center|center_vertical|left"
+        />
+    <!--android:background="@drawable/rounded_shape_white"-->
+    <ImageView
+        android:id="@+id/item_check_box"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:layout_marginLeft="7dp"
+        android:layout_gravity="center_vertical|right"
+        android:gravity="center|center_vertical|right"
+        android:src="@drawable/mod_check" />
+
+</LinearLayout>

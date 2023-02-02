@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.pos.passport.ui.AutoFitTextView
+        android:id="@+id/item_text_view"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/txt_name"
+        android:gravity="center"
+        android:singleLine="true"
+        android:background="@drawable/rounded_shape_white"/>
+    <ImageView
+        android:id="@+id/item_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="left"
+        android:src="@drawable/ic_done_24dp" />
+
+</FrameLayout>

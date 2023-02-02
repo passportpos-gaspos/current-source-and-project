@@ -1,0 +1,12 @@
+
+t
+java:S2293C"YReplace the type specification in this constructor call with the diamond operator ("<>").(Í¾Å¶ÿÿÿÿÿ
+i
+java:S11929"NDefine a constant instead of duplicating this literal "Quick Buttons" 4 times.(ÓËË©øÿÿÿÿ
+j
+java:S1192"ODefine a constant instead of duplicating this literal "Inventory Main" 7 times.(¬®ˆèùÿÿÿÿ
+K
+java:S1066‹"/Merge this if statement with the enclosing one.(Á½Ï†úÿÿÿÿ
+h
+java:S3252J"MUse static access with "android.widget.AbsListView" for "CHOICE_MODE_SINGLE".(ïÕÑÑúÿÿÿÿ
+h	java:S100]"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ«óøÿÿÿÿ

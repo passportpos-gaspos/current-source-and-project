@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="500dp"
+    android:padding="24dp">
+
+    <Spinner
+        android:id="@+id/type_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:entries="@array/comm_type_hardware"/>
+
+    <EditText
+        android:id="@+id/name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_name"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textAppearance="@style/textLayoutAppearance" />
+
+    <EditText
+        android:id="@+id/ip_address_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_ip_address"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textAppearance="@style/textLayoutAppearance" />
+
+    <EditText
+        android:id="@+id/port_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_port"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textAppearance="@style/textLayoutAppearance" />
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+#Wed Feb 01 21:35:33 CST 2023
+base.0=C\:\\as_projects\\Passport\\Passportsingle\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=C\:\\as_projects\\Passport\\Passportsingle\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes2.dex

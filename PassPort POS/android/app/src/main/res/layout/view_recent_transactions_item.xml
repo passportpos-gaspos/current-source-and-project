@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_relative_layout"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/sale_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title_txt"
+        android:padding="3dp"/>
+
+    <TextView
+        android:id="@+id/sale_transaction_number_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="3dp"
+        android:textSize="@dimen/title_txt" />
+
+    <LinearLayout
+        android:id="@+id/sale_items_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sale_time_text_view"
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="100dp"
+        android:orientation="vertical"
+        android:padding="3dp" />
+
+    <TextView
+        android:id="@+id/sale_subtotal_label_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sale_items_linear_layout"
+        android:padding="3dp"
+        android:text="@string/txt_sub_total"
+        android:textSize="@dimen/title_txt" />
+
+    <TextView
+        android:id="@+id/sale_subtotal_amount_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sale_items_linear_layout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="3dp"
+        android:text="$0.00"
+        android:textSize="@dimen/title_txt"/>
+
+    <TextView
+        android:id="@+id/sale_discount_label_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sale_subtotal_label_text_view"
+        android:padding="3dp"
+        android:text="@string/txt_discount"
+        android:textSize="@dimen/title_txt"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/sale_discount_amount_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sale_subtotal_label_text_view"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="3dp"
+        android:textSize="@dimen/title_txt"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/sale_tax_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sale_discount_amount_text_view"
+        android:orientation="vertical"
+        android:padding="3dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/sale_total_label_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sale_tax_linear_layout"
+        android:padding="3dp"
+        android:text="@string/txt_total"
+        android:textSize="@dimen/title_txt" />
+
+
+    <TextView
+        android:id="@+id/sale_total_amount_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sale_tax_linear_layout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="3dp"
+        android:textSize="@dimen/title_txt" />
+
+    <TextView
+        android:id="@+id/sale_payment_type_label_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sale_total_label_text_view"
+        android:padding="3dp"
+        android:textSize="@dimen/title_txt"
+        android:text="@string/txt_payment_type_label" />
+
+    <TextView
+        android:id="@+id/sale_payment_type_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sale_total_label_text_view"
+        android:layout_toRightOf="@id/sale_payment_type_label_text_view"
+        android:layout_toEndOf="@id/sale_payment_type_label_text_view"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="3dp"
+        android:textSize="@dimen/title_txt" />
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sale_payment_type_label_text_view"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/reprint_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/blue_a400"
+            android:textSize="@dimen/title_txt"
+            android:text="@string/txt_reprint"/>
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/refund_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/blue_a400"
+            android:textSize="@dimen/title_txt"
+            android:visibility="gone"
+            android:text="@string/txt_refund"/>
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/blue_a400"
+            android:textSize="@dimen/title_txt"
+            android:text="@string/txt_void"
+            android:visibility="gone"/>
+    </LinearLayout>
+</RelativeLayout>

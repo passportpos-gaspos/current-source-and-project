@@ -1,0 +1,27 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.StarMicronics.StarIOSDK"
+4    android:versionCode="13"
+5    android:versionName="3.7" > <!-- If the following tag define, android device 3.0 and earlier can not install at google play -->
+6    <!-- uses-feature android:name="android.hardware.usb.host" / -->
+7    <uses-sdk
+7-->C:\as_projects\PassPort POS\android\StarIOSDK\AndroidManifest.xml:13:5-43
+8        android:minSdkVersion="7"
+8-->C:\as_projects\PassPort POS\android\StarIOSDK\AndroidManifest.xml:13:15-40
+9        android:targetSdkVersion="28" />
+9-->C:\as_projects\PassPort POS\android\StarIOSDK\AndroidManifest.xml:13:5-43
+10
+11    <supports-screens
+11-->C:\as_projects\PassPort POS\android\StarIOSDK\AndroidManifest.xml:5:5-10:37
+12        android:anyDensity="true"
+12-->C:\as_projects\PassPort POS\android\StarIOSDK\AndroidManifest.xml:10:9-34
+13        android:largeScreens="true"
+13-->C:\as_projects\PassPort POS\android\StarIOSDK\AndroidManifest.xml:8:9-36
+14        android:normalScreens="true"
+14-->C:\as_projects\PassPort POS\android\StarIOSDK\AndroidManifest.xml:7:9-37
+15        android:resizeable="true"
+15-->C:\as_projects\PassPort POS\android\StarIOSDK\AndroidManifest.xml:9:9-34
+16        android:smallScreens="true" />
+16-->C:\as_projects\PassPort POS\android\StarIOSDK\AndroidManifest.xml:6:9-36
+17
+18</manifest>

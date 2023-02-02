@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <item
+        android:id="@+id/saveReport"
+        android:icon="@drawable/ic_menu_save"
+        android:orderInCategory="1"
+        app:showAsAction="always|withText"
+        android:title="Save Report"/>
+    <item
+        android:id="@+id/endReport"
+        android:icon="@drawable/ic_menu_report"
+        android:orderInCategory="1"
+        app:showAsAction="always|withText"
+        android:title="End Day"/>
+    <item
+        android:id="@+id/printReport"
+        android:icon="@drawable/print"
+        android:orderInCategory="2"
+        app:showAsAction="always|withText"
+        android:title="Print Report"/>
+    <item
+        android:id="@+id/build_report"
+        android:orderInCategory="0"
+        app:showAsAction="always|withText"
+        android:title="Build Report"/>
+    <item
+        android:id="@+id/email_report"
+        android:orderInCategory="5"
+        app:showAsAction="never"
+        android:title="Email Report"/>
+
+</menu>

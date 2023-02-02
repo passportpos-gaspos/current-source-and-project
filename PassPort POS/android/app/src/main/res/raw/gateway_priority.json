@@ -1,0 +1,10 @@
+{
+  "serviceName": "priority",
+  "baseUrl": "",
+  "sandBoxBaseUrl": "https://sandbox.api.mxmerchant.com/checkout/v3/payment?echo=true",
+  "apiKey": "",
+  "sandBoxApiKey": "",
+  "applicationType": "application/json",
+  "connectionTimeout": 5000,
+  "readTimeout": 10000
+}

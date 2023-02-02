@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/borderMarginFull"
+
+        android:background="@drawable/border"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/mainLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:stretchColumns="1" >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center|center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:paddingRight="10dp"
+                            android:text="Tax 1:"
+                            android:textAppearance="@style/textLayoutAppearance" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <EditText
+                            android:id="@+id/taxName1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Tax 1 Name"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:textAppearance="@style/textLayoutAppearance" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/tax1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5sp"
+                            android:layout_weight="1"
+                            android:hint="Tax 1 Amount %"
+                            android:inputType="numberDecimal"
+                            android:singleLine="true"
+                            android:textAppearance="@style/textLayoutAppearance" >
+                        </EditText>
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center|center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:paddingRight="10dp"
+                            android:text="Tax 2:"
+                            android:textAppearance="@style/textLayoutAppearance" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <EditText
+                            android:id="@+id/taxName2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Tax 2 Name"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:textAppearance="@style/textLayoutAppearance" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/tax2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_weight="1"
+                            android:hint="Tax 2 Amount %"
+                            android:inputType="numberDecimal"
+                            android:singleLine="true"
+                            android:textAppearance="@style/textLayoutAppearance" >
+                        </EditText>
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center|center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:paddingRight="10dp"
+                            android:text="Tax 3:"
+                            android:textAppearance="@style/textLayoutAppearance" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <EditText
+                            android:id="@+id/taxName3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Tax 3 Name"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:textAppearance="@style/textLayoutAppearance" />
+
+                        <EditText
+                            android:id="@+id/tax3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_weight="1"
+                            android:hint="Tax 3 Amount %"
+                            android:inputType="numberDecimal"
+                            android:singleLine="true"
+                            android:textAppearance="@style/textLayoutAppearance" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow >
+
+                    <Button
+                        android:id="@+id/save"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Save Settings"
+                        android:textAppearance="@style/textLayoutAppearance" >
+                    </Button>
+
+                    <Button
+                        android:id="@+id/rset"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Reset Settings"
+                        android:textAppearance="@style/textLayoutAppearance" >
+                    </Button>
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

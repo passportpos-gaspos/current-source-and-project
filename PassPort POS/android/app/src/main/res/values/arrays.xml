@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="printer_types">
+        <item>Generic ESC/POS</item>
+        <item>Star TSP100LAN</item>
+        <item>SNBC</item>
+        <item>Custom America T-Ten</item>
+        <item>Partner Tech PT-6210</item>
+        <item>Elo Touch</item>
+    </string-array>
+
+    <string-array name="inventory_menu">
+        <item>Products</item>
+        <item>Departments</item>
+        <item>Low Inventory</item>
+    </string-array>
+
+    <string-array name="reports_list">
+        <item>End of Shift</item>
+        <item>History</item>
+        <item>Items Sold</item>
+        <item>Summary</item>
+        <item>Margins</item>
+        <item>Customer</item>
+        <item>Cashier</item>
+        <item>Credit Card</item>"
+    </string-array>
+
+    <string-array name="queue_menu">
+        <item>Counter</item>
+        <item>Open</item>
+        <item>Archive</item>
+    </string-array>
+
+    <string-array name="queue_menu_counter">
+        <item>Counter</item>
+    </string-array>
+
+    <string-array name="comm_type_hardware">
+        <item>Ingenico ICT220</item>
+    </string-array>
+    
+    <string-array name="config_dev">
+        <item>http://demo.webfirminfotech.com/</item>
+        <item>pos_api/v1/api/</item>
+        <item>497Lq10pwjJwlk480PYxV62wlm3B7O4p</item>
+    </string-array>
+
+    <string-array name="config_prod">
+        <item>https://api.cumuluspos.com/</item>
+        <item>v1/api/</item>
+        <item>UaeY1RkY5B9s5cIfHOQbhKwK7HNoj0BNP1UoyEfjidFC493W4stZUiR9</item>
+    </string-array>
+
+    <string-array name="config_passportpos_uat">
+        <item>https://api-uat.cumuluspos.com/</item>
+        <item>v1/api/</item>
+        <item>UaeY1RkY5B9s5cIfHOQbhKwK7HNoj0BNP1UoyEfjidFC493W4stZUiR9</item>
+    </string-array>
+
+    <string-array name="config_passportpos_dev">
+        <item>https://api-dev.cumuluspos.com/</item>
+        <item>v1/api/</item>
+        <item>497Lq10pwjJwlk480PYxV62wlm3B7O4p</item>
+    </string-array>
+
+    <string-array name="config_passport">
+        <item>http://api.passportpos.com/</item>
+        <item>v1/api/</item>
+        <item>UaeY1RkY5B9s5cIfHOQbhKwK7HNoj0BNP1UoyEfjidFC493W4stZUiR9</item>
+    </string-array>
+
+</resources>

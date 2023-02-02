@@ -1,0 +1,106 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.passportsingle"
+    android:versionCode="311"
+    android:versionName="3.1.1" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!--uses-permission android:name="android.permission.INSTALL_PACKAGES" /-->
+    <!--user-permission android:name="android.permission.DELETE_PACKAGES" /-->
+
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
+    <application
+        android:configChanges="keyboardHidden|orientation|locale"
+        android:label="@string/app_name"
+        >
+        <activity
+            android:name="com.passportsingle.PointOfSale"
+            android:icon="@drawable/posicon"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.passportsingle.ChargeScreen"
+            android:label="@string/chargescreen"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.passportsingle.GeniusCharge"
+            android:label="MH Genius"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.passportsingle.KeyInScreen"
+            android:label="Manual Key In"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.passportsingle.ReportsTest"
+            android:label="@string/reports"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.passportsingle.InventoryFragment"
+            android:label="@string/inventory"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.passportsingle.SettingsFragment"
+            android:label="@string/settings"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity 
+            android:name= "com.passportsingle.RecentTransactionsFragment"
+            android:label="Recent Transactions"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.passportsingle.CustomersFragment"
+            android:label="@string/customers"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.passportsingle.HelpFragment"
+            android:label="@string/help"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.passportsingle.RegisterScreen"
+            android:label="Register"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity 
+            android:name="com.passportsingle.WebViewActivity"
+            android:label= "Web View"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        
+    </application>
+
+</manifest>

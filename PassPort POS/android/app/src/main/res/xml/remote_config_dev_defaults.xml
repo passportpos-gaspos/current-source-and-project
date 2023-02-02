@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>base_url</key>
+        <value>http://demo.webfirminfotech.com/</value>
+    </entry>
+
+    <entry>
+        <key>access_key</key>
+        <value>497Lq10pwjJwlk480PYxV62wlm3B7O4p</value>
+    </entry>
+
+    <entry>
+        <key>base_inner</key>
+        <value>pos_api/v1/api/</value>
+    </entry>
+</defaultsMap>

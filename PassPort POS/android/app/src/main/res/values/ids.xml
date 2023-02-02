@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="register" />
+    <item type="id" name="recent_transactions" />
+    <item type="id" name="kick_cash_drawer" />
+    <item type="id" name="reports" />
+    <item type="id" name="settings" />
+    <item type="id" name="sync" />
+    <item type="id" name="help" />
+    <item type="id" name="logout" />
+    <item type="id" name="dgv_wobble_tag"/>
+</resources>

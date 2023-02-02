@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "359798672784",
+    "firebase_url": "https://cumulus-production.firebaseio.com",
+    "project_id": "cumulus-production",
+    "storage_bucket": "cumulus-production.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359798672784:android:f5be55caa11a90df",
+        "android_client_info": {
+          "package_name": "com.pos.cumulus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "359798672784-hfhk30v4q0ii8okkes3q15bfn0d7hl17.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyoLofb5YdhxDCWvwo4Vd-K9xd5Q5m_KE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

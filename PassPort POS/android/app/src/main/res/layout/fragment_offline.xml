@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="50dp"
+    android:paddingBottom="50dp"
+
+    android:gravity="center_horizontal">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:gravity="center"
+        android:text="@string/txt_offline_mode"
+        android:textAppearance="@style/textLayoutAppearance" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center|center_vertical|center_horizontal|left"
+            android:textColor="@color/txt_light_clr_setting"
+            android:textSize="20sp"
+            android:text="@string/txt_time_offline" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+                >
+                    <TextView
+                        android:id="@+id/time_offline_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:textColor="@color/txt_setting_clr"
+                        android:textSize="20sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="Hour : min : sec"
+                    android:textColor="@color/txt_light_clr_setting"
+                    android:textSize="20sp" />
+            </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="@color/txt_setting_clr"
+        android:text="@string/txt_current_credit_card_batch"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/transactions_label_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/txt_light_clr_setting"
+            android:textSize="20sp"
+            android:text="@string/txt_transactions"/>
+
+        <TextView
+            android:id="@+id/transactions_text_view"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:textColor="@color/txt_setting_clr"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/dollar_value_label_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/transactions_label_text_view"
+            android:padding="10dp"
+            android:textColor="@color/txt_light_clr_setting"
+            android:textSize="20sp"
+            android:text="@string/txt_dollar_value"/>
+
+        <TextView
+            android:id="@+id/dollar_value_text_view"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/dollar_value_label_text_view"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:textColor="@color/txt_setting_clr"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="@color/txt_setting_clr"
+        android:text="@string/txt_current_cash_check_offline_batch"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/cash_transactions_label_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/txt_light_clr_setting"
+            android:textSize="20sp"
+            android:text="@string/txt_transactions"/>
+
+        <TextView
+            android:id="@+id/cash_transactions_text_view"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:textColor="@color/txt_setting_clr"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cash_dollar_value_label_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cash_transactions_label_text_view"
+            android:padding="10dp"
+            android:textColor="@color/txt_light_clr_setting"
+            android:textSize="20sp"
+            android:text="@string/txt_dollar_value"/>
+
+        <TextView
+            android:id="@+id/cash_dollar_value_text_view"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/cash_dollar_value_label_text_view"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:textColor="@color/txt_setting_clr"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</LinearLayout>
+        </LinearLayout>
+    <Button
+        android:id="@+id/send_batch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp"
+android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:text="@string/txt_send_batch"
+        android:background="@drawable/button_green"/>
+
+</LinearLayout>

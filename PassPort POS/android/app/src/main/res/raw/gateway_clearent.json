@@ -1,0 +1,10 @@
+{
+  "serviceName": "clearent",
+  "baseUrl": "",
+  "sandBoxBaseUrl": "https://gateway-sb.clearent.net/",
+  "apiKey": "",
+  "sandBoxApiKey": "0161660ee95d4bf5a47a44572595f7da",
+  "applicationType": "application/json",
+  "connectionTimeout": 5000,
+  "readTimeout": 10000
+}

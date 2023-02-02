@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/TextNickName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="**:**:**:**:**:**"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_BLE"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextNickName"
+        android:layout_margin="10dp"
+        android:layout_toLeftOf="@+id/buttonDeviceSettings"
+		android:progress="30"
+		android:max="50"
+		android:secondaryProgress="30"
+        android:progressDrawable="@xml/setting_progressbar_ble"/>
+
+     <Button
+        android:id="@+id/buttonDeviceSettings"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@+id/TextNickName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:drawable/ic_menu_preferences"/>
+        <!-- android:onClick="showDeviceSettings"/> -->
+        
+    <TextView
+        android:id="@+id/TextMACAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/buttonDeviceSettings"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:text="**:**:**:**:**:**" />
+
+    <TextView
+        android:id="@+id/TextPortName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TextMACAddress"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:text="**:**:**:**:**:**" />
+
+     <Button
+        android:id="@+id/buttonPrint_OpenDrawer"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@+id/progressBar_BLE"
+        android:layout_marginLeft="10dp"
+        android:text="Print or OpenDrawer"/>
+        <!-- android:onClick="PrintOpenDrawer"/> -->
+     
+     <TextView
+        android:id="@+id/Text_pleaseSelectDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@+id/progressBar_BLE"
+        android:layout_marginRight="10dp"
+        android:gravity="left"
+        android:textColor="#808080"
+        android:text="Please Select a Device"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="400dp"
+    android:minHeight="600dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/borderMarginFull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="400dp"
+
+            android:orientation="vertical"
+            android:gravity="center|center_vertical|center_horizontal"
+            android:layout_gravity="center|center_vertical|center_horizontal"
+            >
+            <AutoCompleteTextView
+                android:id="@+id/search_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:inputType="textEmailAddress"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:background="@android:color/transparent"
+                android:gravity="center|center_vertical|center_horizontal"
+                android:layout_gravity="center|center_vertical|center_horizontal"
+                android:textSize="22sp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1.2dp"
+                android:background="@android:color/darker_gray"
+                />
+
+        </LinearLayout>
+        <Spinner
+            android:id="@+id/department_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical|center_horizontal"
+            android:gravity="center|center_vertical|center_horizontal"
+            android:minWidth="360dp"
+            android:padding="10dp"/>
+
+        <GridView
+            android:id="@+id/item_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="1"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:verticalScrollbarPosition="right"
+            android:scrollbars="vertical"
+            android:listSelector="@android:color/transparent" />
+    </LinearLayout>
+
+</LinearLayout>

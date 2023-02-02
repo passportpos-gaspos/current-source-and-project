@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border" >
+
+    <TableRow
+        android:id="@+id/TableRow01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tenPadTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_span="4"
+            android:background="@drawable/button_blue_back"
+            android:gravity="left"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:text="Large Text"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/ten_top" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/amountView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_span="4"
+            android:background="@drawable/button_gray_back"
+            android:gravity="right"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:text="Large Text"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/ten_top" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/keyPad7"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_spacing"
+            android:background="@drawable/button_gray_selector"
+            android:gravity="center"
+            android:onClick="keypadPressed"
+            android:text="7"
+            android:textColor="#000000"
+            android:textSize="@dimen/ten_button" />
+
+        <Button
+            android:id="@+id/keyPad8"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_spacing"
+            android:background="@drawable/button_gray_selector"
+            android:gravity="center"
+            android:onClick="keypadPressed"
+            android:text="8"
+            android:textColor="#000000"
+            android:textSize="@dimen/ten_button" />
+
+        <Button
+            android:id="@+id/keyPad9"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_spacing"
+            android:background="@drawable/button_gray_selector"
+            android:gravity="center"
+            android:onClick="keypadPressed"
+            android:text="9"
+            android:textColor="#000000"
+            android:textSize="@dimen/ten_button" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/keyPad4"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_spacing"
+            android:background="@drawable/button_gray_selector"
+            android:gravity="center"
+            android:onClick="keypadPressed"
+            android:text="4"
+            android:textColor="#000000"
+            android:textSize="@dimen/ten_button" />
+
+        <Button
+            android:id="@+id/keyPad5"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_spacing"
+            android:background="@drawable/button_gray_selector"
+            android:gravity="center"
+            android:onClick="keypadPressed"
+            android:text="5"
+            android:textColor="#000000"
+            android:textSize="@dimen/ten_button" />
+
+        <Button
+            android:id="@+id/keyPad6"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_spacing"
+            android:background="@drawable/button_gray_selector"
+            android:gravity="center"
+            android:onClick="keypadPressed"
+            android:text="6"
+            android:textColor="#000000"
+            android:textSize="@dimen/ten_button" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/keyPad1"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_spacing"
+            android:background="@drawable/button_gray_selector"
+            android:gravity="center"
+            android:onClick="keypadPressed"
+            android:text="1"
+            android:textColor="#000000"
+            android:textSize="@dimen/ten_button" />
+
+        <Button
+            android:id="@+id/keyPad2"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_spacing"
+            android:background="@drawable/button_gray_selector"
+            android:gravity="center"
+            android:onClick="keypadPressed"
+            android:text="2"
+            android:textColor="#000000"
+            android:textSize="@dimen/ten_button" />
+
+        <Button
+            android:id="@+id/keyPad3"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_spacing"
+            android:background="@drawable/button_gray_selector"
+            android:gravity="center"
+            android:onClick="keypadPressed"
+            android:text="3"
+            android:textColor="#000000"
+            android:textSize="@dimen/ten_button" />
+        
+        <ImageButton
+            android:id="@+id/keyPadCancel"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_spacing"
+            android:background="@drawable/button_red_selector"
+            android:gravity="center"
+            android:onClick="keypadPressed"
+            android:src="@drawable/cross2" 
+            android:scaleType="fitCenter"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        
+        <Button
+            android:id="@+id/keyPad00"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_spacing"
+            android:background="@drawable/button_gray_selector"
+            android:gravity="center"
+            android:onClick="keypadPressed"
+            android:text="00"
+            android:textColor="#000000"
+            android:textSize="@dimen/ten_button" />
+
+        <Button
+            android:id="@+id/keyPad0"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_spacing"
+            android:background="@drawable/button_gray_selector"
+            android:gravity="center"
+            android:onClick="keypadPressed"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="@dimen/ten_button" />
+
+        <ImageButton
+            android:id="@+id/keyPadDelete"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_spacing"
+            android:background="@drawable/button_yellow_selector"
+            android:gravity="center"
+            android:onClick="keypadPressed"
+            android:src="@drawable/arrow_left" 
+            android:scaleType="fitCenter"/>
+        
+        <ImageButton
+            android:id="@+id/keyPadOkay"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_spacing"
+            android:background="@drawable/button_green_selector"
+            android:gravity="center"
+            android:onClick="keypadPressed"
+            android:src="@drawable/checkmark" 
+            android:scaleType="fitCenter"/>
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,215 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ProxiPRNTDeviceSettingsActivity" >
+         
+   	<TextView
+        android:id="@+id/textView_proxiprnt_device_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Settings"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+   	
+   	<TextView 
+   	    android:id="@+id/textView_proxiprnt_device_settings_portname" 
+   	    android:layout_width="wrap_content" 
+   	    android:layout_height="wrap_content" 
+   	    android:layout_alignLeft="@+id/textView2" 
+   	    android:layout_below="@+id/textView_proxiprnt_device_settings" 
+   	    android:text="Port Name" 
+   	    android:textAppearance="?android:attr/textAppearanceMedium" />
+   	
+   	<EditText
+   	     android:id="@+id/editText_proxiprnt_device_settings_portname"
+   	     android:layout_width="fill_parent"
+   	     android:layout_height="wrap_content"
+   	     android:layout_alignLeft="@+id/textView_proxiprnt_device_settings_portsettigns"
+   	     android:layout_alignParentRight="true" 
+   	     android:layout_below="@+id/textView_proxiprnt_device_settings_portname" 
+   	     android:ems="10" 
+   	     android:text="USB:" />
+   	
+   	<TextView 
+   	    android:id="@+id/textView_proxiprnt_device_settings_nickname" 
+   	    android:layout_width="wrap_content" 
+   	    android:layout_height="wrap_content" 
+   	    android:layout_alignLeft="@+id/textView2" 
+   	    android:layout_below="@+id/editText_proxiprnt_device_settings_portname" 
+   	    android:text="Nick Name" 
+   	    android:textAppearance="?android:attr/textAppearanceMedium" />
+   	
+   	<EditText
+   	     android:id="@+id/editText_proxiprnt_device_settings_nickname"
+   	     android:layout_width="fill_parent"
+   	     android:layout_height="wrap_content"
+   	     android:layout_alignLeft="@+id/textView_proxiprnt_device_settings_portsettigns"
+   	     android:layout_alignParentRight="true" 
+   	     android:layout_below="@+id/textView_proxiprnt_device_settings_nickname" 
+   	     android:layout_marginBottom="23dp" 
+   	     android:ems="10" 
+   	     android:text="Sample Nick Name:" />
+   		
+   	<TextView 
+   	    android:id="@+id/textView_proxiprnt_device_settings_portsettigns" 
+   	    android:layout_width="wrap_content" 
+   	    android:layout_height="wrap_content" 
+   	    android:layout_alignLeft="@+id/textView2" 
+   	    android:layout_below="@+id/editText_proxiprnt_device_settings_nickname" 
+   	    android:text="Port Settings" 
+   	    android:textAppearance="?android:attr/textAppearanceMedium" />
+   	
+   	<Spinner 
+   	    android:id="@+id/spinner_proxiprnt_proxiprnt_device_settings_portsettings" 
+   	    android:layout_width="wrap_content" 
+   	    android:layout_height="wrap_content" 
+   	    android:layout_alignLeft="@+id/textView2" 
+   	    android:layout_alignRight="@+id/textView_proxiprnt_device_settings_portsettigns" 
+   	    android:layout_below="@+id/textView_proxiprnt_device_settings_portsettigns"/> 
+   	
+   	<TextView 
+   	    android:id="@+id/textView_proxiprnt_device_settings_bluetoothsettigns" 
+   	    android:layout_width="wrap_content" 
+   	    android:layout_height="wrap_content" 
+   	    android:layout_alignLeft="@+id/textView2" 
+   	    android:layout_below="@+id/spinner_proxiprnt_proxiprnt_device_settings_portsettings" 
+   	    android:text="Bluetooth Settings" 
+   	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner 
+        android:id="@+id/spinner_proxiprnt_proxiprnt_device_settings_bluetoothsettings" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_alignLeft="@+id/textView2" 
+        android:layout_alignRight="@+id/textView_proxiprnt_device_settings_bluetoothsettigns" 
+        android:layout_below="@+id/textView_proxiprnt_device_settings_bluetoothsettigns" />
+
+    <TextView 
+   	    android:id="@+id/textView_proxiprnt_device_settings_lanettigns" 
+   	    android:layout_width="wrap_content" 
+   	    android:layout_height="wrap_content" 
+   	    android:layout_alignLeft="@+id/textView2" 
+   	    android:layout_below="@+id/spinner_proxiprnt_proxiprnt_device_settings_bluetoothsettings" 
+   	    android:text="LAN Settings" 
+   	    android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <Spinner 
+        android:id="@+id/spinner_proxiprnt_proxiprnt_device_settings_lansettings" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_alignLeft="@+id/textView2" 
+        android:layout_alignRight="@+id/textView_proxiprnt_device_settings_bluetoothsettigns" 
+        android:layout_below="@+id/textView_proxiprnt_device_settings_lanettigns" />
+   
+    <TextView 
+        android:id="@+id/textView2" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_alignLeft="@+id/seekBar_proxiprnt_device_settings_threshold" 
+        android:layout_below="@+id/spinner_proxiprnt_proxiprnt_device_settings_lansettings" 
+        android:text="RSSI threshold" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+               		    
+    <SeekBar
+        android:id="@+id/seekBar_proxiprnt_device_settings_threshold"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_proxiprnt_device_settings_printersettings"
+        android:layout_below="@+id/textView2"
+        android:layout_toLeftOf="@+id/textView_proxiprnt_device_settings_threshold"
+        android:max="50"
+        android:progress="30"
+        android:secondaryProgress="30"
+        android:progressDrawable="@xml/setting_seekbar" />
+
+    <TextView 
+        android:id="@+id/textView_proxiprnt_device_settings_raw_rssi" 
+        android:layout_width="50dp" 
+        android:layout_height="wrap_content" 
+        android:layout_alignBottom="@+id/seekBar_proxiprnt_device_settings_threshold" 
+        android:layout_alignParentRight="true" 
+        android:layout_alignTop="@+id/seekBar_proxiprnt_device_settings_threshold" 
+        android:layout_marginLeft="5dp" 
+        android:text="-50" 
+        android:textColor="#ffffff" 
+        android:textSize="25sp" />
+
+    <TextView 
+        android:id="@+id/textView_proxiprnt_device_settings_threshold" 
+        android:layout_width="50dp" 
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/textView_proxiprnt_device_settings_raw_rssi"
+        android:layout_alignParentRight="true" 
+        android:layout_marginLeft="5dp" 
+        android:text="-60" 
+        android:textColor="#ffffff" 
+        android:textSize="25sp" />
+    	
+    <Button
+        android:id="@+id/button_SetCurrentMaxRSSI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar_proxiprnt_device_settings_threshold"
+        android:layout_toLeftOf="@+id/textView_proxiprnt_device_settings_raw_rssi"
+        android:onClick="SetRSSIThreshold"
+        android:text="Set RSSI Threshold" android:layout_weight="0.01"/>
+        
+    <TextView
+        android:id="@+id/textView_proxiprnt_device_settings_printersettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_SetCurrentMaxRSSI"
+        android:text="Printer Setting"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_proxiprnt_device_settings_printersettings"
+        android:layout_below="@+id/textView_proxiprnt_device_settings_printersettings"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/textView_proxiprnt_device_settings_usecashdrawer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Use CashDrawer:  "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton_proxiprnt_device_settings_usecashdrawer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton"/>
+        
+        <Spinner 
+	        android:id="@+id/spinner_proxiprnt_proxiprnt_device_settings_usecashdrawersettings" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" 
+	        android:layout_alignLeft="@+id/textView2" />
+
+    </LinearLayout>  
+
+   
+    <Button
+        android:id="@+id/button_proxiprnt_device_settings_done"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView_proxiprnt_device_settings_threshold"
+        android:onClick="applyProxiPRNTDeviceSettings"
+        android:text="Done"
+        android:textSize="22sp">
+    </Button>
+  
+</RelativeLayout>

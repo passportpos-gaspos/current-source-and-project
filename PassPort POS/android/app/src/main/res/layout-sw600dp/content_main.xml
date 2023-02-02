@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    tools:context=".activity.MainActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    <include
+        layout="@layout/view_nav_right"
+        android:id="@+id/view_nav_departments"
+        android:layout_width="@dimen/side_nav_menu"
+        android:layout_height="match_parent"
+        android:visibility="visible"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/content_fragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical" />
+    <fragment
+        android:id="@+id/queue_fragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_weight="@dimen/receipt_size_weight"
+        android:name="com.pos.passport.fragment.QueueFragment" />
+    <fragment
+        android:id="@+id/ff_fragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="@dimen/receipt_size_weight"
+        android:visibility="gone"
+        android:name="com.pos.passport.fragment.FFQueueFragment" />
+
+</LinearLayout>

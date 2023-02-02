@@ -1,0 +1,9 @@
+{
+  "serviceName": "bridgepay",
+  "baseUrl": "",
+  "sandBoxBaseUrl": "https://gatewaystage.itstgate.com/smartpayments/transact3.asmx",
+  "applicationType": "application/xml",
+  "contentType": "text/xml; charset=utf-8",
+  "connectionTimeout": 5000,
+  "readTimeout": 10000
+}

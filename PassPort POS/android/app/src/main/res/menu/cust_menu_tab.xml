@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_newcust"
+        android:orderInCategory="0"
+        app:showAsAction="ifRoom|withText"
+        android:title="Add Customer"/>
+    
+    <item
+        android:id="@+id/menu_search"
+        app:showAsAction="always"
+        android:title="Find Item"/>
+ 
+</menu>

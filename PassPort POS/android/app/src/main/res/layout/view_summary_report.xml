@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/txt_department"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_txt"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/txt_amount"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_txt"
+            android:gravity="end"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/departments_linear_layout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/txt_total_discount"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_txt"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/discount_amount_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/txt_price_0"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_txt"
+            android:gravity="end"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/txt_tax_group"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_txt"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/txt_amount"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_txt"
+            android:gravity="end"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tax_linear_layout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/txt_total"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_txt"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/total_amount_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/txt_price_0"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_txt"
+            android:gravity="end"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/txt_tendered_type"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_txt"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/txt_amount"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_txt"
+            android:gravity="end"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tender_linear_layout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/change_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/txt_customer_change"
+                android:textSize="@dimen/title_txt"
+                android:padding="5dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/change_amount_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/txt_price_0"
+                android:gravity="end"
+                android:textSize="@dimen/title_txt"
+                android:padding="5dp"
+                android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/txt_cashier"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_txt"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/txt_amount"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/title_txt"
+                android:gravity="end"
+                android:padding="5dp"
+                android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cashier_linear_layout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/txt_tip_total"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_txt"
+            android:padding="5dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tip_total_amount_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/txt_price_0"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_txt"
+            android:gravity="end"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/txt_voids_total"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_txt"
+            android:padding="5dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/void_total_amount_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/txt_price_0"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_txt"
+            android:gravity="end"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/txt_return_total"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_txt"
+            android:padding="5dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/return_total_amount_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/txt_price_0"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_txt"
+            android:gravity="end"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <Button
+        style="?android:attr/buttonBarButtonStyle"
+        android:id="@+id/print_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:padding="10dp"
+        android:textColor="@color/blue_a400"
+        android:textSize="@dimen/title_txt"
+        android:text="@string/txt_print"/>
+
+</LinearLayout>

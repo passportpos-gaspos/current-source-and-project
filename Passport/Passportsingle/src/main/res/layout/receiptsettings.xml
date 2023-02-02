@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".ReceiptSettingsFragment" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        style="@style/borderMarginFull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/TableRow04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false" >
+
+                    <Spinner
+                        android:id="@+id/printerType"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:entries="@array/printerTypeArray" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+
+                    <RadioGroup
+                        android:id="@+id/PrinterGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="onRadioButtonClicked"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/RadioOff"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="Off"
+                            android:textAppearance="@style/textLayoutAppearance" />
+
+                        <RadioButton
+                            android:id="@+id/RadioStar"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:checked="true"
+                            android:text="Use Star TSP100LAN"
+                            android:textAppearance="@style/textLayoutAppearance" />
+
+                        <RadioButton
+                            android:id="@+id/RadioCustom"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:checked="false"
+                            android:text="Use Custom America Printer"
+                            android:textAppearance="@style/textLayoutAppearance" />
+
+                        <RadioButton
+                            android:id="@+id/RadioEpson"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:checked="true"
+                            android:text="Use ESC/POS printer"
+                            android:textAppearance="@style/textLayoutAppearance" />
+                    </RadioGroup>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RadioGroup
+                        android:id="@+id/TypeGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="onRadioButtonClicked"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radioButtonTCP"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".75"
+                            android:checked="true"
+                            android:text="LAN"
+                            android:textAppearance="@style/textLayoutAppearance" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonBT"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="Bluetooth"
+                            android:textAppearance="@style/textLayoutAppearance" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonUSB"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:checked="false"
+                            android:text="USB: (OS 3.0+)"
+                            android:textAppearance="@style/textLayoutAppearance" />
+                    </RadioGroup>
+                </TableRow>
+                
+                <TableRow
+                    android:id="@+id/tableRowPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" 
+                    android:orientation="horizontal">
+                    
+                    <Spinner
+                        android:id="@+id/PrinterName"
+                        android:layout_height="match_parent" 
+                        android:visibility="visible"/>
+
+                    <Spinner
+                        android:id="@+id/PrinterModel"
+                        android:layout_height="match_parent" 
+                        android:visibility="visible"/>
+                 
+				</TableRow>
+
+                <TableRow
+                    android:id="@+id/TableRow03"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RadioGroup
+                        android:id="@+id/printSizeGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="onRadioButtonClicked"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/size2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="2'' Printer"
+                            android:textAppearance="@style/textLayoutAppearance" />
+
+                        <RadioButton
+                            android:id="@+id/size3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:text="3'' Printer"
+                            android:textAppearance="@style/textLayoutAppearance" />
+                    </RadioGroup>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TableRow01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+
+                    <CheckBox
+                        android:id="@+id/dkCheckBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Drawer Kick" />
+
+                    <CheckBox
+                        android:id="@+id/cdCheckBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Customer Display" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TableRow02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/printerNameView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:text="Printer Name:"
+                        android:textAppearance="@style/textLayoutAppearance" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false" >
+
+                    <EditText
+                        android:id="@+id/receiptAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:hint="TCP:&lt;IP Address>"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textAppearance="@style/textLayoutAppearance" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/footerblurb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Receipt Footer Message"
+                        android:singleLine="false"
+                        android:textAppearance="@style/textLayoutAppearance" >
+
+                        <requestFocus />
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/searchPrinter"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Search for Printer"
+                        android:textAppearance="@style/textLayoutAppearance" />
+
+                    <Button
+                        android:id="@+id/receipt_save"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Save Settings"
+                        android:textAppearance="@style/textLayoutAppearance" />
+
+                    <Button
+                        android:id="@+id/receipt_test"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:text="Print Test"
+                        android:textAppearance="@style/textLayoutAppearance" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

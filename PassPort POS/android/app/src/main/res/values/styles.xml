@@ -1,0 +1,130 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/pos_primary_color</item>
+        <item name="colorPrimaryDark">@color/pos_dark_primary_color</item>
+        <item name="colorAccent">@color/pos_accent_color</item>
+        <item name="navTextAppearance">@style/TextAppearance.AppCompat.Subhead.Inverse</item>
+        <item name="android:actionButtonStyle">@style/ActionButtonStyle</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:titleTextColor">@android:color/transparent</item>
+    </style>
+    <style name="MainActivityTheme" parent="Theme.AppCompat">
+        // ................................................
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="textLayoutAppearanceSmall" parent="@android:style/TextAppearance.Small" />
+    <style name="textLayoutAppearance" parent="@android:style/TextAppearance.Small" />
+    <style name="textLayoutAppearanceBigger" parent="@android:style/TextAppearance.Medium" />
+
+    <style name="receiptLayoutAppearance" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">28px</item>
+    </style>
+
+    <style name="receiptLayoutAppearanceLarge" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">36px</item>
+    </style>
+
+    <style name="textLayoutAppearanceCharge" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="borderMarginFull">
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="borderMarginRightTop">
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <style name="borderMarginLeftSide">
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <style name="borderMarginBottom">
+        <item name="android:layout_marginBottom">1dp</item>
+    </style>
+
+    <style name="borderMarginRight">
+        <item name="android:layout_marginRight">1dp</item>
+    </style>
+
+    <style name="standardButton">
+        <item name="android:background">@drawable/button_white</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_margin">1dp</item>
+    </style>
+
+    <style name="keypadStyle">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:layout_marginRight">1dp</item>
+    </style>
+
+    <style name="keypadBottomStyle">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+    </style>
+
+    <style name="Widget.Design.NavigationView.Dark" parent="Widget.Design.NavigationView">
+        <item name="elevation">@dimen/design_navigation_elevation</item>
+        <item name="android:background">@color/pos_secondary_blue</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:maxWidth">@dimen/design_navigation_max_width</item>
+    </style>
+
+    <style name="TextAppearance.Design.Tab.Passport" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColor">@color/primary_text_color</item>
+    </style>
+    <style name="DialogStyle" parent="Base.Theme.AppCompat.Dialog">
+        <item name="android:background">@color/reg_top</item>
+        <item name="android:windowMinWidthMajor">75%</item>
+        <item name="android:windowMinWidthMinor">75%</item>
+    </style>
+    <style name="TextColor">
+        <item name="android:textColor">@color/primary_text_color</item>
+
+    </style>
+    <style name="simpletooltip_default" parent="@android:style/TextAppearance.Medium"></style>
+
+    <style name="ActionButtonStyle" parent="@android:style/Widget.Holo.Light.ActionButton">
+        <item name="android:padding">40dip</item>
+    </style>
+
+</resources>

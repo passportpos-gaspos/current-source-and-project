@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent" >
+        
+    <TextView
+        android:id="@+id/textView_ProxiPRNT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:text="Proxi PRNT"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+         
+    <ListView
+        android:id="@+id/listView_BLEList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:divider="#555555"
+        android:dividerHeight="3sp"
+        android:layout_below="@+id/textView_ProxiPRNT" >
+    </ListView>
+    
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Could not detect the BLE device.\nPlease make sure that the power is being supplied to the BLE device.\nPlease tap [Back] button and then tap [Proxi PRNT] button again." 
+        />
+    
+</RelativeLayout>

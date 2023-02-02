@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="500dp"
+    android:padding="24dp">
+
+    <Spinner
+        android:id="@+id/printer_type_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" />
+
+    <RadioGroup
+        android:id="@+id/printer_connection_type_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/connection_type_tcp_radio_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/txt_lan"
+            android:textAppearance="@style/textLayoutAppearance" />
+
+        <RadioButton
+            android:id="@+id/connection_type_bluetooth_radio_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/txt_bluetooth"
+            android:textAppearance="@style/textLayoutAppearance" />
+
+        <RadioButton
+            android:id="@+id/connection_type_usb_radio_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/txt_usb_os_3_above"
+            android:textAppearance="@style/textLayoutAppearance" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/printer_size_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/size_2_inch_radio_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txt_2_inch_printer"
+            android:textAppearance="@style/textLayoutAppearance" />
+
+        <RadioButton
+            android:id="@+id/size_3_inch_radio_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txt_3_inch_printer"
+            android:textAppearance="@style/textLayoutAppearance" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/kick_cash_drawer_check_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/txt_kick_cash_drawer"
+        android:textAppearance="@style/textLayoutAppearance"/>
+
+    <CheckBox
+        android:id="@+id/print_open_order_check_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/txt_print_open_order"
+        android:textAppearance="@style/textLayoutAppearance"/>
+
+    <CheckBox
+        android:id="@+id/main_printer_check_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/txt_main_printer_for_report_and_reprint"
+        android:textAppearance="@style/textLayoutAppearance" />
+
+    <EditText
+        android:id="@+id/ip_address_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_ip_address"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textAppearance="@style/textLayoutAppearance" />
+
+    <Button
+        android:id="@+id/search_printer_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_search_for_printer"
+        android:textAppearance="@style/textLayoutAppearance" />
+
+</LinearLayout>

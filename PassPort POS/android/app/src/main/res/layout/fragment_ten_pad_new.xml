@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ten_pad_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#f2f2f2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ten_pad_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ten_pad_title_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="@string/txt_admin_login"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!--<ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_margin="10dp"
+
+                android:src="@color/gray_200" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+
+            android:orientation="horizontal"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:id="@+id/display_text_view"
+                style="@style/borderMarginBottom"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:duplicateParentState="false"
+                android:editable="false"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="end|center_vertical"
+                android:maxLength="6"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/txt_large_text"
+                android:textSize="23sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/password_edit_text"
+                style="@style/borderMarginBottom"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="end|center_vertical"
+                android:inputType="numberPassword"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="23sp"
+                android:visibility="gone"
+                android:windowSoftInputMode="stateHidden" />
+
+            <ImageButton
+                android:id="@+id/ten_pad_delete_image_button"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="1dp"
+                android:background="#0D6696"
+                android:padding="13dp"
+                android:src="@drawable/ic_backspace_blue_24dp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/ten_pad_discount_radio_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <RadioButton
+                            android:id="@+id/ten_pad_amount_radio_button"
+                            style="@style/borderMarginRight"
+                            android:layout_width="73dp"
+                            android:layout_height="73dp"
+                            android:layout_weight="0.13"
+                            android:background="@drawable/button_radio_gray"
+                            android:button="@drawable/button_radio_gray"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/txt_currency_symbol"
+                            android:textColor="@android:color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/ten_pad_percent_radio_button"
+                            android:layout_width="73dp"
+                            android:layout_height="73dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/button_radio_gray"
+                            android:button="@drawable/button_radio_gray"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/txt_percent_symbol"
+                            android:textColor="@color/pos_secondary_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/ten_pad_1_button"
+                                style="@style/keypadStyle"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/button_white"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="@color/padtxtclr"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/ten_pad_2_button"
+                                style="@style/keypadStyle"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:background="@drawable/button_white"
+                                android:gravity="center"
+                                android:text="2"
+                                android:textColor="@color/padtxtclr"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/ten_pad_3_button"
+                                style="@style/keypadStyle"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:background="@drawable/button_white"
+                                android:gravity="center"
+                                android:text="3"
+                                android:textColor="@color/padtxtclr"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--   ****************Second row 4 to 6            -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/ten_pad_4_button"
+                                style="@style/keypadStyle"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:background="@drawable/button_white"
+                                android:gravity="center"
+                                android:text="4"
+                                android:textColor="@color/padtxtclr"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/ten_pad_5_button"
+                                style="@style/keypadStyle"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:background="@drawable/button_white"
+                                android:gravity="center"
+                                android:text="5"
+                                android:textColor="@color/padtxtclr"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/ten_pad_6_button"
+                                style="@style/keypadStyle"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:background="@drawable/button_white"
+                                android:gravity="center"
+                                android:text="6"
+                                android:textColor="@color/padtxtclr"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--   ****************Second row 7 to 9            -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/ten_pad_7_button"
+                                style="@style/keypadStyle"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:background="@drawable/button_white"
+                                android:gravity="center"
+                                android:text="7"
+                                android:textColor="@color/padtxtclr"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/ten_pad_8_button"
+                                style="@style/keypadStyle"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:background="@drawable/button_white"
+                                android:gravity="center"
+                                android:text="8"
+                                android:textColor="@color/padtxtclr"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/ten_pad_9_button"
+                                style="@style/keypadStyle"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:background="@drawable/button_white"
+                                android:gravity="center"
+                                android:text="9"
+                                android:textColor="@color/padtxtclr"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--   ****************Second row 00 to 0            -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/ten_pad_00_button"
+                                style="@style/keypadStyle"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:background="@drawable/button_white"
+                                android:gravity="center"
+                                android:text="00"
+                                android:textColor="@color/padtxtclr"
+                                android:textSize="24sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/ten_pad_0_button"
+                                style="@style/keypadStyle"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:background="@drawable/button_white"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textColor="@color/padtxtclr"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/ten_pad_dot_button"
+                                style="@style/keypadStyle"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:background="@drawable/button_white"
+                                android:gravity="center"
+                                android:text="."
+                                android:textColor="@color/padtxtclr"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/btn_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical|center_horizontal"
+            android:gravity="center|center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/ten_pad_cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical|center_horizontal"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border_rec_del"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/red_600"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <!--<Button
+                style="@style/keypadBottomStyle"
+                android:id="@+id/ten_pad_ok_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="fill"
+                android:padding="20dp"
+                android:gravity="center"
+                android:textSize="@dimen/ten_top"
+                android:textColor="@color/blue_a400"
+                android:text="@android:string/ok"
+                android:background="@drawable/button_white_gray_border" />-->
+
+            <Button
+                android:id="@+id/ten_pad_ok_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical|center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:background="#0D6696"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="Update"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

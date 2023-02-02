@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_title_bar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="18sp"
+        android:text="@string/txt_email"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/email_receipt_auto_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:hint="@string/txt_email"
+        android:layout_marginRight="20dp"
+        android:padding="5dp"
+        android:minLines="2"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/customer_first_name_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:hint="First Name (Optional)"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:minLines="2" />
+            <EditText
+                android:id="@+id/customer_last_name_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:hint="Last Name (Optional)"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:minLines="2" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/email_receipt_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:textColor="@android:color/white"
+        android:text="@string/txt_save"
+        android:textStyle="bold"
+        android:background="@color/pos_button_color" />
+
+</LinearLayout>

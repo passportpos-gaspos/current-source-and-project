@@ -1,0 +1,81 @@
+
+t
+java:S1192®"XUse already-defined constant 'PAYMENT_TYPE_CHECK' instead of duplicating its value here.(‘¡‹³ıÿÿÿÿ
+c
+java:S1192¯"GDefine a constant instead of duplicating this literal "Button" 6 times.(´é¥úÿÿÿÿ
+c
+java:S1192°"GDefine a constant instead of duplicating this literal "Amount" 6 times.(æÄ…Äüÿÿÿÿ
+K
+java:S1066å"/Merge this if statement with the enclosing one.(È¹Ğ øÿÿÿÿ
+F
+java:S1066Ô"/Merge this if statement with the enclosing one.(Œ¾Æ
+f	java:S117œ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÜk
+f	java:S117¥"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÜk
+D
+java:S1604¨"(Make this anonymous inner class a lambda(ğÒò•ıÿÿÿÿ
+D
+java:S1604Ê"(Make this anonymous inner class a lambda(­ïÚËùÿÿÿÿ
+D
+java:S1604€"(Make this anonymous inner class a lambda(ƒıÍÕşÿÿÿÿ
+D
+java:S1604Ä"(Make this anonymous inner class a lambda(˜ã¯şÿÿÿÿ
+?
+java:S1604¡"(Make this anonymous inner class a lambda(Šè¨˜
+g
+java:S1301¤"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ
+v
+java:S1488´"_Immediately return this expression instead of assigning it to the temporary variable "strDate".(®¤²Š
+z
+java:S1104Ê"^Make mCashClickListener a static final constant or non-public and provide accessors if needed.(­ïÚËùÿÿÿÿ
+}
+java:S4165î"aRemove this useless assignment; "ret" already holds the assigned value along all execution paths.(«¡ÿÿÿÿÿ
+h	java:S116@"TRename this field "DEBUG_TAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òÉ
+x	java:S116A"^Rename this field "TAG_DIALOG_FRAGMENT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ò˜­úÿÿÿÿ
+6
+java:S1170@"!Make this final field static too.(òÉ
+<
+java:S1170A"!Make this final field static too.(·ò˜­úÿÿÿÿ
+
+java:S1186‚"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(É†¼Âûÿÿÿÿ
+
+java:S1186‡"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(è…íùÿÿÿÿ
+Q	java:S125O"<This block of commented-out lines of code should be removed.(Èò—
+R	java:S125¼"<This block of commented-out lines of code should be removed.(­¦¥ª
+f
+java:S3252À"JUse static access with "java.text.NumberFormat" for "getCurrencyInstance".(²––©øÿÿÿÿ
+a
+java:S3252Ô"JUse static access with "java.text.NumberFormat" for "getCurrencyInstance".(«ÍÜ½
+R	java:S125“"<This block of commented-out lines of code should be removed.(­¦¥ª
+f
+java:S3252—"JUse static access with "java.text.NumberFormat" for "getCurrencyInstance".(²––©øÿÿÿÿ
+a
+java:S3252»"JUse static access with "java.text.NumberFormat" for "getCurrencyInstance".(´ƒãå
+W	java:S125ƒ"<This block of commented-out lines of code should be removed.(Ô•°ªûÿÿÿÿ
+R	java:S125…"<This block of commented-out lines of code should be removed.(í»¤ñ
+=	java:S131¤""Add a default case to this switch.(øå´¡ÿÿÿÿÿ
+f
+java:S3252ò"JUse static access with "java.text.NumberFormat" for "getCurrencyInstance".(Ôíóòûÿÿÿÿ
+`
+java:S3252ó"JUse static access with "java.text.NumberFormat" for "getCurrencyInstance".(€ëñy
+a
+java:S3252‰"JUse static access with "java.text.NumberFormat" for "getCurrencyInstance".(¦è²
+f
+java:S3252Š"JUse static access with "java.text.NumberFormat" for "getCurrencyInstance".(¸§üıÿÿÿÿ
+n
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(™Êï†úÿÿÿÿ
+
+java:S1186Ë"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(óÕì½úÿÿÿÿ
+a
+java:S3252Ø"JUse static access with "java.text.NumberFormat" for "getCurrencyInstance".(…ƒ€
+f
+java:S3252â"JUse static access with "java.text.NumberFormat" for "getCurrencyInstance".(¥Æûÿÿÿÿ
+R	java:S125"<This block of commented-out lines of code should be removed.(­¦¥ª
+R	java:S125¨"<This block of commented-out lines of code should be removed.(­¦¥ª
+=
+java:S1905»"'Remove this unnecessary cast to "Date".(Æ‰ç
+F
+java:S3398û"*Move this method into "MtHandlerCallback".(Å»¸úÿÿÿÿ
+F
+java:S3398"*Move this method into "MtHandlerCallback".(™Êï†úÿÿÿÿ
+V
+java:S1068p";Remove this unused "mCreditPaymentReference" private field.(•¾øºşÿÿÿÿ

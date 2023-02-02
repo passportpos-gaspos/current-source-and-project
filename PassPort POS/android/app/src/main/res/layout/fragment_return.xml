@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/txt_amount"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="@dimen/sys_button_text_big" />
+
+        <TextView
+            android:id="@+id/amount_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="-$00.00"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="@dimen/sys_button_text_big" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/card_number_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/card_number_edit_text"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:hint="@string/txt_card_number"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="16"
+            android:padding="5dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/card_expiration_month_edit_text"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:hint="@string/txt_mm"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="2"
+            android:padding="5dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/card_expiration_year_edit_text"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:hint="@string/txt_yy"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="4"
+            android:padding="5dp"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/pay_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/txt_pay"
+            android:textAllCaps="true"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cash_button"
+            android:layout_width="@dimen/tender_button"
+            android:layout_height="@dimen/tender_button"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_light_gray"
+            android:focusable="false"
+            android:padding="5dp"
+            android:text="@string/txt_cash"
+            android:textColor="@color/light_blue_500"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/card_button"
+            android:layout_width="@dimen/tender_button"
+            android:layout_height="@dimen/tender_button"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_light_gray"
+            android:focusable="false"
+            android:padding="5dp"
+            android:text="Card"
+            android:textColor="@color/light_blue_500"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/pos_button_color"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="@string/txt_cancel"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

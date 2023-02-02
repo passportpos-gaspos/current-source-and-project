@@ -1,0 +1,652 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.passportsingle"
+4    android:versionCode="311"
+5    android:versionName="3.1.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="14"
+8-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="26" />
+9-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:6:5-81
+11-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:6:22-78
+12    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+12-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:7:5-86
+12-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:7:22-83
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:8:5-67
+13-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:8:22-64
+14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+14-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:9:5-76
+14-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:9:22-73
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:10:5-79
+15-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:10:22-76
+16    <uses-permission android:name="android.permission.BLUETOOTH" />
+16-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:11:5-68
+16-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:11:22-65
+17    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+17-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:12:5-74
+17-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:12:22-71
+18    <uses-permission android:name="android.permission.WAKE_LOCK" />
+18-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:13:5-68
+18-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:13:22-65
+19    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+19-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:14:5-71
+19-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:14:22-68
+20    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+20-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:15:5-80
+20-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:15:22-77
+21    <!-- uses-permission android:name="android.permission.INSTALL_PACKAGES" / -->
+22    <!-- user-permission android:name="android.permission.DELETE_PACKAGES" / -->
+23
+24    <uses-feature
+24-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:19:5-21:36
+25        android:name="android.hardware.usb.host"
+25-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:20:9-49
+26        android:required="false" />
+26-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:21:9-33
+27    <uses-feature
+27-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:22:5-24:36
+28        android:name="android.hardware.bluetooth"
+28-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:23:9-50
+29        android:required="false" />
+29-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:24:9-33
+30    <uses-feature
+30-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:25:5-27:36
+31        android:name="android.hardware.wifi"
+31-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:26:9-45
+32        android:required="false" />
+32-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:27:9-33
+33    <uses-feature
+33-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:28:5-30:36
+34        android:name="android.hardware.microphone"
+34-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:29:9-51
+35        android:required="false" />
+35-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:30:9-33
+36
+37    <supports-screens
+37-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-16:39
+38        android:anyDensity="true"
+38-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-34
+39        android:largeScreens="true"
+39-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-36
+40        android:normalScreens="true"
+40-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-37
+41        android:resizeable="true"
+41-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:9-34
+42        android:smallScreens="true" />
+42-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-36
+43
+44    <application
+44-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:32:5-104:19
+45        android:name="android.support.multidex.MultiDexApplication"
+46        android:allowBackup="false"
+46-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:9-36
+47        android:configChanges="keyboardHidden|orientation|locale"
+47-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:33:9-66
+48        android:debuggable="true"
+49        android:enabled="true"
+49-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:9-31
+50        android:icon="@drawable/staricon"
+50-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:9-42
+51        android:label="@string/app_name" >
+51-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:34:9-41
+52        <activity
+52-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:36:9-47:20
+53            android:name="com.passportsingle.PointOfSale"
+53-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:37:13-58
+54            android:icon="@drawable/posicon"
+54-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:38:13-45
+55            android:label="@string/app_name"
+55-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:39:13-45
+56            android:theme="@style/AppTheme"
+56-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:40:13-44
+57            android:windowSoftInputMode="adjustPan" >
+57-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:41:13-52
+58            <intent-filter>
+58-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:42:13-46:29
+59                <action android:name="android.intent.action.MAIN" />
+59-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:43:17-69
+59-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:43:25-66
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:45:17-77
+61-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:45:27-74
+62            </intent-filter>
+63        </activity>
+64        <activity
+64-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:48:9-52:55
+65            android:name="com.passportsingle.ChargeScreen"
+65-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:49:13-59
+66            android:label="@string/chargescreen"
+66-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:50:13-49
+67            android:theme="@style/AppTheme"
+67-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:51:13-44
+68            android:windowSoftInputMode="adjustPan" />
+68-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:52:13-52
+69        <activity
+69-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:53:9-57:55
+70            android:name="com.passportsingle.GeniusCharge"
+70-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:54:13-59
+71            android:label="MH Genius"
+71-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:55:13-38
+72            android:theme="@style/AppTheme"
+72-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:56:13-44
+73            android:windowSoftInputMode="adjustPan" />
+73-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:57:13-52
+74        <activity
+74-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:58:9-62:55
+75            android:name="com.passportsingle.KeyInScreen"
+75-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:59:13-58
+76            android:label="Manual Key In"
+76-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:60:13-42
+77            android:theme="@style/AppTheme"
+77-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:61:13-44
+78            android:windowSoftInputMode="adjustPan" />
+78-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:62:13-52
+79        <activity
+79-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:63:9-67:55
+80            android:name="com.passportsingle.ReportsTest"
+80-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:64:13-58
+81            android:label="@string/reports"
+81-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:65:13-44
+82            android:theme="@style/AppTheme"
+82-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:66:13-44
+83            android:windowSoftInputMode="adjustPan" />
+83-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:67:13-52
+84        <activity
+84-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:68:9-72:55
+85            android:name="com.passportsingle.InventoryFragment"
+85-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:69:13-64
+86            android:label="@string/inventory"
+86-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:70:13-46
+87            android:theme="@style/AppTheme"
+87-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:71:13-44
+88            android:windowSoftInputMode="adjustPan" />
+88-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:72:13-52
+89        <activity
+89-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:73:9-77:55
+90            android:name="com.passportsingle.SettingsFragment"
+90-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:74:13-63
+91            android:label="@string/settings"
+91-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:75:13-45
+92            android:theme="@style/AppTheme"
+92-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:76:13-44
+93            android:windowSoftInputMode="adjustPan" />
+93-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:77:13-52
+94        <activity
+94-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:78:9-82:55
+95            android:name="com.passportsingle.RecentTransactionsFragment"
+95-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:79:13-74
+96            android:label="Recent Transactions"
+96-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:80:13-48
+97            android:theme="@style/AppTheme"
+97-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:81:13-44
+98            android:windowSoftInputMode="adjustPan" />
+98-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:82:13-52
+99        <activity
+99-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:83:9-87:55
+100            android:name="com.passportsingle.CustomersFragment"
+100-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:84:13-64
+101            android:label="@string/customers"
+101-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:85:13-46
+102            android:theme="@style/AppTheme"
+102-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:86:13-44
+103            android:windowSoftInputMode="adjustPan" />
+103-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:87:13-52
+104        <activity
+104-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:88:9-92:55
+105            android:name="com.passportsingle.HelpFragment"
+105-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:89:13-59
+106            android:label="@string/help"
+106-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:90:13-41
+107            android:theme="@style/AppTheme"
+107-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:91:13-44
+108            android:windowSoftInputMode="adjustPan" />
+108-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:92:13-52
+109        <activity
+109-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:93:9-97:55
+110            android:name="com.passportsingle.RegisterScreen"
+110-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:94:13-61
+111            android:label="Register"
+111-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:95:13-37
+112            android:theme="@style/AppTheme"
+112-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:96:13-44
+113            android:windowSoftInputMode="adjustPan" />
+113-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:97:13-52
+114        <activity
+114-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:98:9-102:55
+115            android:name="com.passportsingle.WebViewActivity"
+115-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:99:13-62
+116            android:label="Web View"
+116-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:100:13-38
+117            android:theme="@style/AppTheme"
+117-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:101:13-44
+118            android:windowSoftInputMode="adjustPan" />
+118-->C:\as_projects\Passport\Passportsingle\src\main\AndroidManifest.xml:102:13-52
+119        <activity
+119-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:9-48:20
+120            android:name="com.StarMicronics.StarIOSDK.PrinterTypeActivity"
+120-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:13-75
+121            android:label="@string/app_name"
+121-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:13-45
+122            android:screenOrientation="portrait" >
+122-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:33:13-49
+123
+124            <!--
+125            intent-filter>
+126                <action android:name="android.intent.action.MAIN" />
+127                 <category android:name="android.intent.category.LAUNCHER" />
+128            </intent-filter
+129            -->
+130            <intent-filter>
+130-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:13-43:29
+131                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+131-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:17-90
+131-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:25-87
+132            </intent-filter>
+133
+134            <meta-data
+134-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:45:13-47:57
+135                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+135-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:46:17-79
+136                android:resource="@xml/device_filter" />
+136-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:47:17-54
+137        </activity>
+138        <activity
+138-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:49:9-52:63
+139            android:name="com.StarMicronics.StarIOSDK.barcodeselector"
+139-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:50:13-71
+140            android:screenOrientation="portrait"
+140-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:51:13-49
+141            android:windowSoftInputMode="stateAlwaysHidden" />
+141-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:52:13-60
+142        <activity
+142-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:53:9-56:63
+143            android:name="com.StarMicronics.StarIOSDK.code39Activity"
+143-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:54:13-70
+144            android:screenOrientation="portrait"
+144-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:55:13-49
+145            android:windowSoftInputMode="stateAlwaysHidden" />
+145-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:56:13-60
+146        <activity
+146-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:57:9-60:63
+147            android:name="com.StarMicronics.StarIOSDK.code93Activity"
+147-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:58:13-70
+148            android:screenOrientation="portrait"
+148-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:59:13-49
+149            android:windowSoftInputMode="stateAlwaysHidden" />
+149-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:60:13-60
+150        <activity
+150-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:61:9-64:63
+151            android:name="com.StarMicronics.StarIOSDK.ITFActivity"
+151-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:62:13-67
+152            android:screenOrientation="portrait"
+152-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:63:13-49
+153            android:windowSoftInputMode="stateAlwaysHidden" />
+153-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:64:13-60
+154        <activity
+154-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:65:9-68:63
+155            android:name="com.StarMicronics.StarIOSDK.code128Activity"
+155-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:66:13-71
+156            android:screenOrientation="portrait"
+156-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:67:13-49
+157            android:windowSoftInputMode="stateAlwaysHidden" />
+157-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:68:13-60
+158        <activity
+158-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:69:9-72:63
+159            android:name="com.StarMicronics.StarIOSDK.barcodeselector2d"
+159-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:70:13-73
+160            android:screenOrientation="portrait"
+160-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:71:13-49
+161            android:windowSoftInputMode="stateAlwaysHidden" />
+161-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:72:13-60
+162        <activity
+162-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:73:9-76:63
+163            android:name="com.StarMicronics.StarIOSDK.QRCodeActivity"
+163-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:74:13-70
+164            android:screenOrientation="portrait"
+164-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:75:13-49
+165            android:windowSoftInputMode="stateAlwaysHidden" />
+165-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:76:13-60
+166        <activity
+166-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:77:9-80:63
+167            android:name="com.StarMicronics.StarIOSDK.pdf417Activity"
+167-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:78:13-70
+168            android:screenOrientation="portrait"
+168-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:79:13-49
+169            android:windowSoftInputMode="stateAlwaysHidden" />
+169-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:80:13-60
+170        <activity
+170-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:81:9-84:63
+171            android:name="com.StarMicronics.StarIOSDK.BarcodePrintingMini"
+171-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:82:13-75
+172            android:screenOrientation="portrait"
+172-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:83:13-49
+173            android:windowSoftInputMode="stateAlwaysHidden" />
+173-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:84:13-60
+174        <activity
+174-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:85:9-88:63
+175            android:name="com.StarMicronics.StarIOSDK.QrcodeMiniActivity"
+175-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:86:13-74
+176            android:screenOrientation="portrait"
+176-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:87:13-49
+177            android:windowSoftInputMode="stateAlwaysHidden" />
+177-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:88:13-60
+178        <activity
+178-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:89:9-92:63
+179            android:name="com.StarMicronics.StarIOSDK.pdf417miniActivity"
+179-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:90:13-74
+180            android:screenOrientation="portrait"
+180-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:91:13-49
+181            android:windowSoftInputMode="stateAlwaysHidden" />
+181-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:92:13-60
+182        <activity
+182-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:93:9-96:63
+183            android:name="com.StarMicronics.StarIOSDK.cutActivity"
+183-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:94:13-67
+184            android:screenOrientation="portrait"
+184-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:95:13-49
+185            android:windowSoftInputMode="stateAlwaysHidden" />
+185-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:96:13-60
+186        <activity
+186-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:97:9-100:63
+187            android:name="com.StarMicronics.StarIOSDK.textFormatingActivity"
+187-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:98:13-77
+188            android:screenOrientation="portrait"
+188-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:99:13-49
+189            android:windowSoftInputMode="stateAlwaysHidden" />
+189-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:100:13-60
+190        <activity
+190-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:101:9-104:63
+191            android:name="com.StarMicronics.StarIOSDK.kanjiTextFormatingActivity"
+191-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:102:13-82
+192            android:screenOrientation="portrait"
+192-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:103:13-49
+193            android:windowSoftInputMode="stateAlwaysHidden" />
+193-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:104:13-60
+194        <activity
+194-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:105:9-108:63
+195            android:name="com.StarMicronics.StarIOSDK.rasterPrintingActivity"
+195-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:106:13-78
+196            android:screenOrientation="portrait"
+196-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:107:13-49
+197            android:windowSoftInputMode="stateAlwaysHidden" />
+197-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:108:13-60
+198        <activity
+198-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:109:9-112:63
+199            android:name="com.StarMicronics.StarIOSDK.imagePrintingActivity"
+199-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:110:13-77
+200            android:screenOrientation="portrait"
+200-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:111:13-49
+201            android:windowSoftInputMode="stateAlwaysHidden" />
+201-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:112:13-60
+202        <activity
+202-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:113:9-116:63
+203            android:name="com.StarMicronics.StarIOSDK.textFormatingMiniActivity"
+203-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:114:13-81
+204            android:screenOrientation="portrait"
+204-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:115:13-49
+205            android:windowSoftInputMode="stateAlwaysHidden" />
+205-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:116:13-60
+206        <activity
+206-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:117:9-120:63
+207            android:name="com.StarMicronics.StarIOSDK.kanjiTextFormatingMiniActivity"
+207-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:118:13-86
+208            android:screenOrientation="portrait"
+208-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:119:13-49
+209            android:windowSoftInputMode="stateAlwaysHidden" />
+209-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:120:13-60
+210        <activity
+210-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:121:9-124:63
+211            android:name="com.StarMicronics.StarIOSDK.helpActivity"
+211-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:122:13-68
+212            android:screenOrientation="portrait"
+212-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:123:13-49
+213            android:windowSoftInputMode="stateAlwaysHidden" />
+213-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:124:13-60
+214        <activity
+214-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:125:9-128:63
+215            android:name="com.StarMicronics.StarIOSDK.helpMessage"
+215-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:126:13-67
+216            android:screenOrientation="portrait"
+216-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:127:13-49
+217            android:windowSoftInputMode="stateAlwaysHidden" />
+217-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:128:13-60
+218        <activity
+218-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:129:9-132:63
+219            android:name="com.StarMicronics.StarIOSDK.LineModeHelpActivity"
+219-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:130:13-76
+220            android:screenOrientation="portrait"
+220-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:131:13-49
+221            android:windowSoftInputMode="stateAlwaysHidden" />
+221-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:132:13-60
+222        <activity
+222-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:133:9-136:63
+223            android:name="com.StarMicronics.StarIOSDK.RasterModeHelpActivity"
+223-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:134:13-78
+224            android:screenOrientation="portrait"
+224-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:135:13-49
+225            android:windowSoftInputMode="stateAlwaysHidden" />
+225-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:136:13-60
+226        <activity
+226-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:137:9-140:63
+227            android:name="com.StarMicronics.StarIOSDK.PortableCommandTypeActivity"
+227-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:138:13-83
+228            android:screenOrientation="portrait"
+228-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:139:13-49
+229            android:windowSoftInputMode="stateAlwaysHidden" />
+229-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:140:13-60
+230        <activity
+230-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:141:9-144:63
+231            android:name="com.StarMicronics.StarIOSDK.CommandTypeActivity"
+231-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:142:13-75
+232            android:screenOrientation="portrait"
+232-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:143:13-49
+233            android:windowSoftInputMode="stateAlwaysHidden" />
+233-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:144:13-60
+234        <activity
+234-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:145:9-148:63
+235            android:name="com.StarMicronics.StarIOSDK.StarIOSDKMobilePrinterActivity"
+235-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:146:13-86
+236            android:screenOrientation="portrait"
+236-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:147:13-49
+237            android:windowSoftInputMode="stateAlwaysHidden" />
+237-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:148:13-60
+238        <activity
+238-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:149:9-152:63
+239            android:name="com.StarMicronics.StarIOSDK.StarIOSDKMobilePrinterLineModeActivity"
+239-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:150:13-94
+240            android:screenOrientation="portrait"
+240-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:151:13-49
+241            android:windowSoftInputMode="stateAlwaysHidden" />
+241-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:152:13-60
+242        <activity
+242-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:153:9-156:63
+243            android:name="com.StarMicronics.StarIOSDK.StarIOSDKMobilePrinterRasterModeActivity"
+243-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:154:13-96
+244            android:screenOrientation="portrait"
+244-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:155:13-49
+245            android:windowSoftInputMode="stateAlwaysHidden" />
+245-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:156:13-60
+246        <activity
+246-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:157:9-160:63
+247            android:name="com.StarMicronics.StarIOSDK.StarIOSDKPOSPrinterLineModeActivity"
+247-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:158:13-91
+248            android:screenOrientation="portrait"
+248-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:159:13-49
+249            android:windowSoftInputMode="stateAlwaysHidden" />
+249-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:160:13-60
+250        <activity
+250-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:161:9-164:63
+251            android:name="com.StarMicronics.StarIOSDK.StarIOSDKPOSPrinterRasterModeActivity"
+251-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:162:13-93
+252            android:screenOrientation="portrait"
+252-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:163:13-49
+253            android:windowSoftInputMode="stateAlwaysHidden" />
+253-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:164:13-60
+254        <activity
+254-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:165:9-168:63
+255            android:name="com.StarMicronics.StarIOSDK.DKAirCashActivity"
+255-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:166:13-73
+256            android:screenOrientation="portrait"
+256-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:167:13-49
+257            android:windowSoftInputMode="stateAlwaysHidden" />
+257-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:168:13-60
+258        <activity
+258-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:169:9-172:63
+259            android:name="com.StarMicronics.StarIOSDK.BluetoothSettingActivity"
+259-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:170:13-80
+260            android:screenOrientation="portrait"
+260-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:171:13-49
+261            android:windowSoftInputMode="stateAlwaysHidden" />
+261-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:172:13-60
+262        <activity
+262-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:173:9-176:63
+263            android:name="com.StarMicronics.StarIOSDK.BluetoothSettingHelpActivity"
+263-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:174:13-84
+264            android:screenOrientation="portrait"
+264-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:175:13-49
+265            android:windowSoftInputMode="stateAlwaysHidden" />
+265-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:176:13-60
+266        <activity
+266-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:177:9-180:63
+267            android:name="com.StarMicronics.StarIOSDK.UsbSettingActivity"
+267-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:178:13-74
+268            android:screenOrientation="portrait"
+268-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:179:13-49
+269            android:windowSoftInputMode="stateAlwaysHidden" />
+269-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:180:13-60
+270        <activity
+270-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:181:9-184:63
+271            android:name="com.StarMicronics.StarIOSDK.PINCodeSettingActivity"
+271-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:182:13-78
+272            android:screenOrientation="portrait"
+272-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:183:13-49
+273            android:windowSoftInputMode="stateAlwaysHidden" />
+273-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:184:13-60
+274        <activity
+274-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:185:9-188:63
+275            android:name="com.StarMicronics.StarIOSDK.StarIOSDKDotPOSPrinterLineModeActivity"
+275-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:186:13-94
+276            android:screenOrientation="portrait"
+276-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:187:13-49
+277            android:windowSoftInputMode="stateAlwaysHidden" />
+277-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:188:13-60
+278        <activity
+278-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:189:9-192:63
+279            android:name="com.StarMicronics.StarIOSDK.cutDotPrinterActivity"
+279-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:190:13-77
+280            android:screenOrientation="portrait"
+280-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:191:13-49
+281            android:windowSoftInputMode="stateAlwaysHidden" />
+281-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:192:13-60
+282        <activity
+282-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:193:9-196:63
+283            android:name="com.StarMicronics.StarIOSDK.kanjiTextFormatingDotPrinterActivity"
+283-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:194:13-92
+284            android:screenOrientation="portrait"
+284-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:195:13-49
+285            android:windowSoftInputMode="stateAlwaysHidden" />
+285-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:196:13-60
+286        <activity
+286-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:197:9-200:63
+287            android:name="com.StarMicronics.StarIOSDK.textFormatingDotPrinterActivity"
+287-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:198:13-87
+288            android:screenOrientation="portrait"
+288-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:199:13-49
+289            android:windowSoftInputMode="stateAlwaysHidden" />
+289-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:200:13-60
+290        <activity
+290-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:201:9-204:63
+291            android:name="com.StarMicronics.StarIOSDK.LineModeforImpactDotMatrixHelpActivity"
+291-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:202:13-94
+292            android:screenOrientation="portrait"
+292-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:203:13-49
+293            android:windowSoftInputMode="stateAlwaysHidden" />
+293-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:204:13-60
+294        <activity
+294-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:205:9-208:63
+295            android:name="com.StarMicronics.StarIOSDK.simplifiedchineseTextFormatingActivity"
+295-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:206:13-94
+296            android:screenOrientation="portrait"
+296-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:207:13-49
+297            android:windowSoftInputMode="stateAlwaysHidden" />
+297-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:208:13-60
+298        <activity
+298-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:209:9-212:63
+299            android:name="com.StarMicronics.StarIOSDK.simplifiedchineseTextFormatingDotPrinterActivity"
+299-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:210:13-104
+300            android:screenOrientation="portrait"
+300-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:211:13-49
+301            android:windowSoftInputMode="stateAlwaysHidden" />
+301-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:212:13-60
+302        <activity
+302-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:213:9-216:63
+303            android:name="com.StarMicronics.StarIOSDK.traditionalchineseTextFormatingActivity"
+303-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:214:13-95
+304            android:screenOrientation="portrait"
+304-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:215:13-49
+305            android:windowSoftInputMode="stateAlwaysHidden" />
+305-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:216:13-60
+306        <activity
+306-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:217:9-220:63
+307            android:name="com.StarMicronics.StarIOSDK.traditionalchineseTextFormatingDotPrinterActivity"
+307-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:218:13-105
+308            android:screenOrientation="portrait"
+308-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:219:13-49
+309            android:windowSoftInputMode="stateAlwaysHidden" />
+309-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:220:13-60
+310        <activity
+310-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:221:9-224:63
+311            android:name="com.StarMicronics.StarIOSDK.SampleReciptActivity"
+311-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:222:13-76
+312            android:screenOrientation="portrait"
+312-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:223:13-49
+313            android:windowSoftInputMode="stateAlwaysHidden" />
+313-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:224:13-60
+314        <activity
+314-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:225:9-228:63
+315            android:name="com.StarMicronics.StarIOSDK.textFormattingSelectLanguageActivity"
+315-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:226:13-92
+316            android:screenOrientation="portrait"
+316-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:227:13-49
+317            android:windowSoftInputMode="stateAlwaysHidden" />
+317-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:228:13-60
+318        <activity
+318-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:229:9-232:63
+319            android:name="com.StarMicronics.StarIOSDK.textFormatingUTF8Activity"
+319-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:230:13-81
+320            android:screenOrientation="portrait"
+320-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:231:13-49
+321            android:windowSoftInputMode="stateAlwaysHidden" />
+321-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:232:13-60
+322        <activity android:name="com.StarMicronics.StarIOSDK.ProxiPRNTActivity" />
+322-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:233:9-82
+322-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:233:19-79
+323        <activity android:name="com.StarMicronics.StarIOSDK.ProxiPRNTDeviceSelectActivity" />
+323-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:234:9-94
+323-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:234:19-91
+324        <activity android:name="com.StarMicronics.StarIOSDK.ProxiPRNTDeviceSettingsActivity" />
+324-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:235:9-96
+324-->[:starIOSDK] C:\as_projects\Passport\starIOSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:235:19-93
+325
+326        <meta-data
+326-->[com.android.support:appcompat-v7:26.1.0] C:\Users\Kareem\.gradle\caches\transforms-2\files-2.1\c589bb7ec2d841c67ae68a3682166223\appcompat-v7-26.1.0\AndroidManifest.xml:26:9-28:38
+327            android:name="android.support.VERSION"
+327-->[com.android.support:appcompat-v7:26.1.0] C:\Users\Kareem\.gradle\caches\transforms-2\files-2.1\c589bb7ec2d841c67ae68a3682166223\appcompat-v7-26.1.0\AndroidManifest.xml:27:13-51
+328            android:value="26.1.0" />
+328-->[com.android.support:appcompat-v7:26.1.0] C:\Users\Kareem\.gradle\caches\transforms-2\files-2.1\c589bb7ec2d841c67ae68a3682166223\appcompat-v7-26.1.0\AndroidManifest.xml:28:13-35
+329        <meta-data
+329-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\Kareem\.gradle\caches\transforms-2\files-2.1\d0f6449185399ce77e6ff49656abaac3\runtime-1.0.0\AndroidManifest.xml:25:9-27:47
+330            android:name="android.arch.lifecycle.VERSION"
+330-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\Kareem\.gradle\caches\transforms-2\files-2.1\d0f6449185399ce77e6ff49656abaac3\runtime-1.0.0\AndroidManifest.xml:26:13-58
+331            android:value="27.0.0-SNAPSHOT" />
+331-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\Kareem\.gradle\caches\transforms-2\files-2.1\d0f6449185399ce77e6ff49656abaac3\runtime-1.0.0\AndroidManifest.xml:27:13-44
+332    </application>
+333
+334</manifest>

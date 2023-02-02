@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    >
+    <TextView
+        android:id="@+id/txttitle_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/txt_setting_clr"
+        android:textSize="20sp"
+        android:text="@string/txt_tax_1_label"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/tax_1_name_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:focusable="false"
+        android:hint="@string/txt_tax_1_name"
+        android:inputType="text"
+        android:singleLine="true"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:textColor="@color/txt_setting_clr"
+        android:textAppearance="@style/textLayoutAppearance" />
+
+    <EditText
+        android:id="@+id/tax_1_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5sp"
+        android:enabled="false"
+        android:focusable="false"
+        android:hint="@string/txt_tax_1_amount_percent"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:textColor="@color/txt_setting_clr"
+        android:textAppearance="@style/textLayoutAppearance" />
+</LinearLayout>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    style="@style/borderMarginFull"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/border"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:id="@+id/serialRow"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/serialLabel"
+                    android:layout_gravity="center|left"
+                    android:padding="6dp"
+                    android:text="Serial Key:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/serialEdit"
+                    android:hint="Serial Key"
+                    android:inputType="text|textNoSuggestions"
+                    android:maxLength="10"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/firstNameLabel"
+                    android:layout_gravity="center|left"
+                    android:padding="6dp"
+                    android:text="First Name:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/firstNameEdit"
+                    android:hint="First Name"
+                    android:inputType="text"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/lastNameLabel"
+                    android:layout_gravity="center|left"
+                    android:padding="6dp"
+                    android:text="Last Name:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/lastNameEdit"
+                    android:hint="Last Name"
+                    android:inputType="text"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/companyLabel"
+                    android:layout_gravity="center|left"
+                    android:padding="6dp"
+                    android:text="Company:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/companyEdit"
+                    android:hint="Company"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/phoneLabel"
+                    android:layout_gravity="center|left"
+                    android:padding="6dp"
+                    android:text="Phone:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/phoneEdit"
+                    android:hint="Phone"
+                    android:inputType="text"
+                    android:maxLength="12"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/emailLabel"
+                    android:layout_gravity="center|left"
+                    android:padding="6dp"
+                    android:text="Email:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/emailEdit"
+                    android:hint="Email"
+                    android:inputType="text"
+                    android:maxLength="40"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow android:visibility="gone" >
+
+                <TextView
+                    android:layout_gravity="center|left"
+                    android:padding="6dp"
+                    android:text="Website:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/websiteEdit"
+                    android:hint="Website"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow android:visibility="gone" >
+
+                <TextView
+                    android:layout_gravity="center|left"
+                    android:padding="6dp"
+                    android:text="Address 1:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/address1Edit"
+                    android:hint="Address 1"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow android:visibility="gone" >
+
+                <TextView
+                    android:layout_gravity="center|left"
+                    android:padding="6dp"
+                    android:text="Address 2:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/address2Edit"
+                    android:hint="Address 2"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow android:visibility="gone" >
+
+                <TextView
+                    android:layout_gravity="center|left"
+                    android:padding="6dp"
+                    android:text="City:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/cityEdit"
+                    android:hint="City"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow android:visibility="gone" >
+
+                <TextView
+                    android:layout_gravity="center|left"
+                    android:padding="6dp"
+                    android:text="State/Provance:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/stateEdit"
+                    android:hint="State/Provance"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow android:visibility="gone" >
+
+                <TextView
+                    android:layout_gravity="center|left"
+                    android:padding="6dp"
+                    android:text="Postal Code:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/postalEdit"
+                    android:hint="Postal Code"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow android:visibility="gone" >
+
+                <TextView
+                    android:layout_gravity="center|left"
+                    android:padding="6dp"
+                    android:text="Country:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/countryEdit"
+                    android:hint="Country"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_gravity="center|left"
+                    android:padding="6dp"
+                    android:text="Submit:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/submitRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register" />
+            </TableRow>
+            
+            <TableRow>
+                <Button 
+                    android:id = "@+id/buySerialKey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "Buy Serial Key"
+                    android:visibility="gone" />
+            </TableRow>
+            
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

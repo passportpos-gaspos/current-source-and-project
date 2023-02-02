@@ -1,0 +1,183 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.25.4'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+     maven { url 'https://maven.fabric.io/public' }
+}
+
+android {
+
+    /*signingConfigs {
+        release {
+            storeFile file('C:\\Users\\Kareem\\passportposv113.jks')
+            storePassword 'store9945'
+            keyPassword 'store9945'
+            keyAlias 'passportv113'
+        }
+    }*/
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+
+
+    compileSdkVersion 28
+    configurations.all {
+        resolutionStrategy.force 'com.android.support:support-annotations:28.0.0'
+    }
+    dexOptions {
+        // Prevent OutOfMemory with MultiDex during the build phase
+        javaMaxHeapSize "4g"
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+
+        pickFirst 'lib/armeabi-v7a/libserialnojni.so'
+        pickFirst 'lib/x86/libserialnojni.so'
+        pickFirst 'lib/armeabi/libserialnojni.so'
+
+        pickFirst 'lib/armeabi-v7a/libbarcodereaderjni.so'
+        pickFirst 'lib/x86/libbarcodereaderjni.so'
+        pickFirst 'lib/armeabi/libbarcodereaderjni.so'
+
+        pickFirst 'lib/armeabi-v7a/libcashdrawerjni.so'
+        pickFirst 'lib/x86/libcashdrawerjni.so'
+        pickFirst 'lib/armeabi/libcashdrawerjni.so'
+
+        pickFirst 'lib/armeabi-v7a/libserial_port.so'
+        pickFirst 'lib/x86/libserial_port.so'
+        pickFirst 'lib/armeabi/libserial_port.so'
+
+        pickFirst 'lib/armeabi-v7a/libcfdjni.so'
+        pickFirst 'lib/x86/libcfdjni.so'
+        pickFirst 'lib/armeabi/libcfdjni.so'
+
+        pickFirst 'lib/armeabi-v7a/libredlaser.so'
+        pickFirst 'lib/x86/libredlaser.so'
+        pickFirst 'lib/armeabi/libredlaser.so'
+
+    }
+    /*com.pos.passport*/
+
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.pos.cumulus"
+        minSdkVersion 15
+        //targetSdkVersion 28
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.1.13"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        dexOptions {
+            preDexLibraries = false
+            javaMaxHeapSize "4g" // 2g should be also OK
+        }
+
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    android.variantFilter { variant ->
+        if (variant.buildType.name.endsWith('debug')) {
+            variant.setIgnore(true)
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+        POS {
+            debuggable true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+
+
+    flavorDimensions 'type'
+    productFlavors {
+        passport {
+            applicationId 'com.pos.passport'
+            versionCode 1
+            versionName '1.0.0'
+            buildConfigField 'String', 'GATEWAY', '""'
+            buildConfigField 'String', 'ENVIRONMENT', '"passport"'
+            resValue "string", "app_name", "Passport"
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(include: '*.jar', dir: 'libs')
+    implementation project(':StarIOSDK')
+    implementation project(':elotouch')
+
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.google.code.gson:gson:2.4'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'commons-codec:commons-codec:1.10'
+    implementation 'org.apache.commons:commons-lang3:3.4'
+
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support:support-annotations:28.0.0'
+    androidTestImplementation 'com.android.support.test:runner:0.4'
+    androidTestImplementation 'com.android.support.test:rules:0.4'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.2.1'
+    implementation('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
+        transitive = true;
+    }
+
+    implementation 'me.pushy:sdk:1.0.55'
+    implementation(
+            [group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.2.3'],
+            [group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.2.3'],
+            [group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.2.3']
+    )
+
+
+}
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+/*apply plugin: 'com.google.gms.google-services'*/

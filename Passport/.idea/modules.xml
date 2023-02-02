@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Passport.iml" filepath="$PROJECT_DIR$/Passport.iml" group="Passport" />
+      <module fileurl="file://$PROJECT_DIR$/Passportsingle/Passportsingle.iml" filepath="$PROJECT_DIR$/Passportsingle/Passportsingle.iml" group="Passport/Passportsingle" />
+      <module fileurl="file://$PROJECT_DIR$/starIOSDK/starIOSDK.iml" filepath="$PROJECT_DIR$/starIOSDK/starIOSDK.iml" group="Passport/starIOSDK" />
+    </modules>
+  </component>
+</project>

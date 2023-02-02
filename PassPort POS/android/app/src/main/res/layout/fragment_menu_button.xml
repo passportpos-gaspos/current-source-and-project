@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/layout_title_bar"
+        layout="@layout/view_title_bar" />
+
+
+    <FrameLayout
+        android:id="@+id/header_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#666666"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/back_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="15dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/ic_arrow_left"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/folder_name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:text="@string/txt_folder_name"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <GridView
+        android:id="@+id/dynamic_grid_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="18dp"
+        android:horizontalSpacing="14dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="@integer/int_grid_num_columns"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="14dp" />
+
+</LinearLayout>
+

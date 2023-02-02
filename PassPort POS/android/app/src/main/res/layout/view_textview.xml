@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/vertical_text_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/frmrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.pos.passport.ui.VerticalTextView
+                    android:id="@+id/text_view"
+                    android:layout_width="@dimen/side_nav_text"
+                    android:layout_height="match_parent"
+                    android:minHeight="@dimen/side_nav_btn_height"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/side_nav_btn_padding"
+                    android:paddingRight="@dimen/side_nav_btn_padding"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white_color" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1.3dp"
+                android:layout_gravity="bottom"
+                android:background="@android:color/black" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/pin_image_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F2F2F2">
+            <ImageView
+                android:id="@+id/imgarr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/playnew" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

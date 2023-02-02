@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="500dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/alert_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/gray_850"
+            android:textSize="18sp"
+            android:text="@string/txt_receipt_options" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="10dp"
+            android:src="@color/gray_200"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/print_receipt_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@color/pos_button_color"
+            android:textStyle="bold"
+            android:text="@string/txt_print_receipt"/>
+
+        <Button
+            android:id="@+id/email_receipt_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@color/pos_button_color"
+            android:textStyle="bold"
+            android:text="@string/txt_email_receipt"/>
+
+        <Button
+            android:id="@+id/no_receipt_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@color/pos_button_color"
+            android:textStyle="bold"
+            android:text="@string/txt_no_receipt"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

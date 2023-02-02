@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Passportsingle POS</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_preferences_label">Preferences</string>
+    <string name="menu_dialog_label">Dialog Picker</string>
+    <string name="dialog_set_number">Set</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_print">Print</string>
+    <string name="dialog_picker_title">Choose a number</string>
+    <string name="app_name2">Passportsingle POS</string>
+    <string name="reports">Reports</string>
+    <string name="inventory">Inventory</string>
+    <string name="customers">Customers</string>
+    <string name="settings">Settings</string>
+    <string name="help">Help</string>
+    <string name="item">Item</string>
+    <string name="price">Price</string>
+    <string name="chargescreen">Priority Charge</string>
+    <string name="subtotal">Sub Total</string>
+    <string name="tax">Tax</string>
+    <string name="total">Total</string>
+    <string name="keyboard">Keyboard</string>
+    <string name="search_item_barcode">Search for item/barcode</string>
+    <string name="paymenttype_promt">Payment Type</string>
+    <string name="cashier_promt">Select Cashier</string>
+    <string name="searchInventory">Search Inventory</string>
+    <string name="address">Address</string>
+    <string name="phonenumber">Phone Number</string>
+    <string name="emailaddress">Email Address</string>
+    <string name="website">Website Address</string>
+    <string name="currencysym">Currency Symbol (Default: $)</string>
+    <string name="application_error">Application error: %1$s</string>
+    <string name="proceed">Proceed</string>
+    <string name="error">Error</string>
+    <string name="load">Load</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="welcome">Welcome to</string>
+    <string name="add_product">Add Product</string>
+    <string name="search_quantity">Quantity Search</string>
+    <string name="add_customer">Add Customer</string>
+    <string name="ap_error_name">Insert Item Name</string>
+    <string name="ap_error_price">Insert Item Price</string>
+    <string name="enter_pin">Enter Login Pin</string>
+    <string name="discount_percent">Discount Percent</string>
+    <string name="error_pin">Invalid Login - Bad Pin</string>
+    <string name="success">Success</string>
+    <string name="administrator">Administrator</string>
+    <string name="sale_completed">Sale Completed.</string>
+    <string name="select_sale">Select Saved Sale</string>
+    <string name="percent_off">TOTAL % OFF</string>  
+    <string name="void_sale">Void Sale</string>
+    <string name="void_sale_title">Void Sale?</string>
+    <string name="void_sale_message">Are you sure you want to void this sale?</string>
+    <string name="sale_voided">Sale Voided.</string>
+    <string name="return_sale">Process Return</string>
+    <string name="return_sale_title">Make Sale a Return?</string>
+    <string name="return_sale_message">Making this sale a return will put a negative on all products in the sale. Do you still want to make this sale a return?</string>
+    <string name="receive_sale">Receive Products</string>
+    <string name="receive_sale_title">Receive these products?</string>
+    <string name="receive_sale_message">Receiving these products will increase their quantities in the database. Do you still want to receive them?</string>
+    <string name="receive_sale_done_message">Database item quantities have been added to.</string>
+    <string name="receive_sale_done_title">Products Received.</string>
+    <string name="clear_sale">Clear Sale</string>
+    <string name="sales">Sales: </string>
+    <string name="returns">Returns: </string>
+    <string name="total_amount">Total Amount: </string>
+    <string name="discount">Discount: </string>
+    <string name="change">Change:</string>
+    <string name="customer_change">Customer Change</string>
+    <string name="press_back">Press Back again to Exit</string>
+    <string name="mercury_approved">Transaction Approved</string>
+    <string name="add_note">Add Note</string>
+    <string name="add_note_to_sale">Add Note to Sale</string>
+    <string name="add_note_message">Enter a note to add to the sale. It will show up as a non value product.</string>
+    <string name="add_quantity_search_message">Enter a product name</string>
+    <string name="add_note_search_qunatity">Search product quantity</string>
+    <string name="hardware_kb">Hardware Keyboard Notification</string>
+    <string name="hw_kb_message">We have detected that there is a hardware keyboard or barcode scanner. Use the keyboard button on the status bar to re-enable the software keyboard.</string>
+    <string name="sale_pending">Sale Pending</string>
+    <string name="sale_pending_message">Sale has payment methods. Remove payments before saving sale.</string>
+    <string name="sale_pending_note">Sale has payment methods. Remove payments before adding a new note.</string>
+    <string name="sale_pending_discount">Sale has payment methods. Remove payments before adding a discount.</string>
+    <string name="sale_pending_void">Sale has pending payments. Delete payment or complete transaction before voiding sale.</string>
+    <string name="sale_pending_receive">Sale has payment methods. Remove payments before making receivables.</string>
+    <string name="sale_save_message">Enter name for saving this sale for later. You can recall a sale for later when there is an empty sales screen.</string>
+    <string name="sale_save_title">Save Sale For Later</string>
+    <string name="print_hold_sale">Printing saved sales data</string>
+    <string name="sale_save_ok">Save Sale</string>
+    <string name="sale_save_error">Insert sale name.</string>
+    <string name="sale_processed">Sale Processed</string>
+    <string name="sale_processed_message">Sale has already been complete. Press clear sale before adding products to a new one.</string>
+    <string name="sale_processed_customer">Sale has already been complete. Press clear sale before adding customers to a new one.</string>
+    <string name="sale_processed_park">Sale has already been complete. Press clear sale before saving a sale for recall.</string>
+    <string name="sale_processed_note">"Sale has already been complete. Press clear sale before adding a new note."</string>
+    <string name="no_product_message">Sale has no products. Enter a product before entering a tender.</string>
+    <string name="sale_product_price_edit">Sale has already been complete. Press clear sale before editing products.</string>
+    <string name="not_found">Not Found</string>
+    <string name="product_not_found">Product not found.</string>
+    <string name="customer_not_found">Customer not found.</string>
+    <string name="no_products">No Products</string>
+    <string name="enter_a_product">Enter a product to sell.</string>
+    <string name="no_permission">Invalid Permissions</string>
+    <string name="need_return_permission">Need cashier with Return Permissions to process returns or zero amount.</string>						
+    <string name="need_reports_permission">Need cashier with Report Permissions to view/edit reports.</string>
+    <string name="need_inventory_permission">Need cashier with Inventory Permissions to view/edit inventory.</string>
+    <string name="need_settings_permission">Need cashier with Settings Permissions to view/edit settings.</string>
+    <string name="need_price_permission">Need cashier with Price Modify Permissions to apply discounts.</string> 
+    <string name="external_vt">External Virtual Terminal</string>
+    <string name= "edge_upgrade">Upgrade to Priority Edge</string>
+    <string name="vt_message_1">You are moving to a Web Based Virtual Terminal. Enter the amount of </string>
+    <string name="vt_message_2"> and exit to return to Priority Mobile POS.</string>
+    <string name="vt_return_title">Return from Web Virtual Terminal</string>
+    <string name="vt_return_message">You have returned from a Web Virtual Terminal. Was the payment successful?</string>
+    <string name="external_pa">External Payment App</string>
+    <string name="pa_message_1">You are moving to a popular External Payment App. Enter the amount of </string>
+    <string name="pa_message_2"> and exit to return to Priority Mobile POS.</string>
+    <string name="pa_return_title">Return from External Payment App</string>
+    <string name="pa_return_message">You have returned from an External Payment App. Was the payment successful?</string>
+    <string name="amount_due">Amount Due:</string>
+    <string name="amount_due_m1">Need </string>
+    <string name="amount_due_m2"> to complete transaction.</string>
+    <string name="user_cancelled">Cancelled by user.</string>
+    <string name="email">Email</string>
+    <string name="send_customer_email">Email Receipt to Customer</string>
+    <string name="reprint_receipt">Re-Printing Receipt&#8230;</string>
+    <string name="print_receipt">Printing Receipt&#8230;</string>
+    <string name="send_email">Sending Email&#8230;</string>
+    <string name="resend_email">Re-Sending Email&#8230;</string>
+    <string name="processing_receipts">Processing Receipts&#8230;</string>
+    <string name="print_and_email">Print and Send Email Receipt?</string>
+    <string name="send_and_print">Send and Print</string>
+    <string name="training_cash">Training</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="cashier_select">Select Cashier to login with.</string>
+    <string name="return_cap">RETURN</string>
+    <string name="add_note_cap">ADD NOTE</string>
+    <string name="receive_cap">RECEIVE</string>
+    <string name="voided_cap">VOIDED</string>
+     <string name="on_hand">On Hand</string>
+    <string name="reprint">Reprint</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="cash">Cash</string>
+    <string name="manual">Manual</string>
+    <string name="return_name">Return</string>
+    <string name="approved_name">Approved</string>
+    <string name="declined_name">Declined</string>
+    <string name="reversed_name">Reversed</string>
+    <string name="send_reversal">Sending Reversal&#8230;</string>
+    <string name="send_manual_reversal">Sending Manual Reversal&#8230;</string>
+    <string name="email_success">Email receipt was sent successfully.</string>
+    <string name="email_failed">Email receipt was not sent.</string>
+    <string name="print_success">Receipt sent successfully to printer.</string>
+    <string name="print_failed">Unable to print receipt. Check printer settings.</string>
+    <string name="card_processor">Credit Card Processor</string>
+    <string name="downloading_update">Downloading Update&#8230;</string>
+    <string name="update_available">Update Available</string>
+    <string name="update_message">A required update is available, press download and it will install itself. Should only take a minute.</string>
+    <string name="download">Download</string>
+    <string name="check_update_title">Update Status</string>
+    <string name="check_update_good">Your version of Priority Mobile POS is the current version.</string>
+    <string name="add_prod_message">Add a product that is not in the database to the sale.</string>
+    <string name="add_prod_name">Product Name</string>
+    <string name="add_prod_desc">Description</string>
+    <string name="add_prod_dept">Department</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="customer_email">Customer Email</string>
+    <string name="edit_price">Edit Price</string>
+    <string name="edit_percent">Discount %</string>
+    <string name="set_item">Set Item</string>
+    <string name="delete_item">Delete Item</string>
+    <string name="pre_auth_title">Unprocessed Credit Card Swipes</string>
+    <string name="pre_auth_message">There are unprocessed credit card swipes that need to be sent to Priority Servers. Have a manager login and process them under the Reports -> Priority Auths Tab.</string>
+    
+    <string name="pos_menu_reports">Reports</string>
+    <string name= "pos_menu_print_last_transactions">Reprint</string>
+    <string name="pos_menu_inventory">Inventory</string>
+    <string name="pos_menu_keyboard">Keyboard</string>
+    <string name="pos_menu_customers">Customers</string>
+    <string name="pos_menu_settings">Settings</string>
+    <string name="pos_menu_update">Check Update</string>
+    <string name="pos_menu_help">Help</string>
+    <string name="pos_menu_product">Add Product</string>
+    <string name="pos_menu_customer">Customer</string>
+    <string name="pos_menu_save">Save/Recall Sale</string>
+    <string name="pos_menu_admin">Admin Login</string>
+    <string name="edge_upgrade_message"> Before upgrading from single user to priority edge make sure you buy the edge service and have a cloud username and password.</string>
+    <string name="upgrade"> Upgrade </string>
+    <string name="single_html"> file:///android_asset/buyKey.html</string>
+    <string name="edge_html"> file:///android_asset/buyEdge.html </string>
+    <string name="edge_advantages"> Advantage of Edge Priority POS \n
+        1. Manage your store POS on the move \n
+        2. Get your sales report anytime anywhere \n
+        3. No risk of data loss \n
+        5. Track inventory \n
+        4. Get instance upgrades
+    </string>
+    <string name="card_error"> Enter a valid card details</string>
+    
+    <string-array name="paymenttype">
+        <item>Cash</item>
+        <item>Credit Card</item>
+        <item>Check</item>
+        <item>Other</item>
+        <item>Receiving</item>
+    </string-array>
+
+    <string name="title_setting_list">Settings</string>
+    <string name="title_setting_detail">Setting Detail</string>
+
+    <string-array name="printerTypeArray">
+        <item>Off</item>
+        <item>Star TSP100LAN</item>
+        <item>Custom America</item>
+        <item>SNBC BTP-R880NP</item>
+        <item>Partner Tech PT-6210</item>
+        <item>Generic ESC/POS</item>
+    </string-array>
+    
+</resources>

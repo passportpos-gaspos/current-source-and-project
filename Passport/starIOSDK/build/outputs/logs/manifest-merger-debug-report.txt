@@ -1,0 +1,475 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:2:1-82:12
+INJECTED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:2:1-82:12
+INJECTED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:2:1-82:12
+INJECTED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:2:1-82:12
+INJECTED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:2:1-82:12
+INJECTED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:2:1-82:12
+INJECTED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:2:1-82:12
+	package
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:3:7-44
+		INJECTED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml
+		INJECTED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:4:7-35
+		INJECTED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml
+		INJECTED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:4:36-60
+		INJECTED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml
+		INJECTED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml
+supports-screens
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:5:5-10:37
+	android:largeScreens
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:8:9-36
+	android:smallScreens
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:6:9-36
+	android:normalScreens
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:7:9-37
+	android:resizeable
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:9:9-34
+	android:anyDensity
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:10:9-34
+uses-permission#android.permission.INTERNET
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:15:5-83
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:15:22-64
+uses-permission#android.permission.BLUETOOTH
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:16:5-84
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:16:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:17:5-73
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:17:22-71
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:18:5-80
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:18:22-78
+application
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:20:5-81:19
+	android:enabled
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:20:85-107
+	android:label
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:20:52-84
+	android:icon
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:20:18-51
+	android:allowBackup
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:20:108-135
+activity#com.StarMicronics.StarIOSDK.PrinterTypeActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:21:9-31:20
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:22:52-88
+	android:label
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:22:19-51
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:21:19-54
+intent-filter#action:name:android.hardware.usb.action.USB_DEVICE_ATTACHED
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:27:13-29:29
+action#android.hardware.usb.action.USB_DEVICE_ATTACHED
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:28:18-91
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:28:26-88
+meta-data#android.hardware.usb.action.USB_DEVICE_ATTACHED
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:30:13-127
+	android:resource
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:30:87-124
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:30:24-86
+activity#com.StarMicronics.StarIOSDK.barcodeselector
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:32:9-146
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:32:50-86
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:32:87-134
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:32:19-49
+activity#com.StarMicronics.StarIOSDK.code39Activity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:33:9-145
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:33:49-85
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:33:86-133
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:33:19-48
+activity#com.StarMicronics.StarIOSDK.code93Activity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:34:9-145
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:34:49-85
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:34:86-133
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:34:19-48
+activity#com.StarMicronics.StarIOSDK.ITFActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:35:9-142
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:35:46-82
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:35:83-130
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:35:19-45
+activity#com.StarMicronics.StarIOSDK.code128Activity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:36:9-146
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:36:50-86
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:36:87-134
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:36:19-49
+activity#com.StarMicronics.StarIOSDK.barcodeselector2d
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:37:9-148
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:37:52-88
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:37:89-136
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:37:19-51
+activity#com.StarMicronics.StarIOSDK.QRCodeActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:38:9-145
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:38:49-85
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:38:86-133
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:38:19-48
+activity#com.StarMicronics.StarIOSDK.pdf417Activity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:39:9-145
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:39:49-85
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:39:86-133
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:39:19-48
+activity#com.StarMicronics.StarIOSDK.BarcodePrintingMini
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:40:9-150
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:40:54-90
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:40:91-138
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:40:19-53
+activity#com.StarMicronics.StarIOSDK.QrcodeMiniActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:41:9-149
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:41:53-89
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:41:90-137
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:41:19-52
+activity#com.StarMicronics.StarIOSDK.pdf417miniActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:42:9-149
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:42:53-89
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:42:90-137
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:42:19-52
+activity#com.StarMicronics.StarIOSDK.cutActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:43:9-142
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:43:46-82
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:43:83-130
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:43:19-45
+activity#com.StarMicronics.StarIOSDK.textFormatingActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:44:9-152
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:44:56-92
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:44:93-140
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:44:19-55
+activity#com.StarMicronics.StarIOSDK.kanjiTextFormatingActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:45:9-157
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:45:61-97
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:45:98-145
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:45:19-60
+activity#com.StarMicronics.StarIOSDK.rasterPrintingActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:46:9-153
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:46:57-93
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:46:94-141
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:46:19-56
+activity#com.StarMicronics.StarIOSDK.imagePrintingActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:47:9-152
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:47:56-92
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:47:93-140
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:47:19-55
+activity#com.StarMicronics.StarIOSDK.textFormatingMiniActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:48:9-156
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:48:60-96
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:48:97-144
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:48:19-59
+activity#com.StarMicronics.StarIOSDK.kanjiTextFormatingMiniActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:49:9-161
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:49:65-101
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:49:102-149
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:49:19-64
+activity#com.StarMicronics.StarIOSDK.helpActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:50:9-143
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:50:47-83
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:50:84-131
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:50:19-46
+activity#com.StarMicronics.StarIOSDK.helpMessage
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:51:9-142
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:51:46-82
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:51:83-130
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:51:19-45
+activity#com.StarMicronics.StarIOSDK.LineModeHelpActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:52:9-151
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:52:55-91
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:52:92-139
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:52:19-54
+activity#com.StarMicronics.StarIOSDK.RasterModeHelpActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:53:9-153
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:53:57-93
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:53:94-141
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:53:19-56
+activity#com.StarMicronics.StarIOSDK.PortableCommandTypeActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:54:9-158
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:54:62-98
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:54:99-146
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:54:19-61
+activity#com.StarMicronics.StarIOSDK.CommandTypeActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:55:9-150
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:55:54-90
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:55:91-138
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:55:19-53
+activity#com.StarMicronics.StarIOSDK.StarIOSDKMobilePrinterActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:56:9-161
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:56:65-101
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:56:102-149
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:56:19-64
+activity#com.StarMicronics.StarIOSDK.StarIOSDKMobilePrinterLineModeActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:57:9-169
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:57:73-109
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:57:110-157
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:57:19-72
+activity#com.StarMicronics.StarIOSDK.StarIOSDKMobilePrinterRasterModeActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:58:9-171
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:58:75-111
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:58:112-159
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:58:19-74
+activity#com.StarMicronics.StarIOSDK.StarIOSDKPOSPrinterLineModeActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:59:9-166
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:59:70-106
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:59:107-154
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:59:19-69
+activity#com.StarMicronics.StarIOSDK.StarIOSDKPOSPrinterRasterModeActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:60:9-168
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:60:72-108
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:60:109-156
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:60:19-71
+activity#com.StarMicronics.StarIOSDK.DKAirCashActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:61:9-148
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:61:52-88
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:61:89-136
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:61:19-51
+activity#com.StarMicronics.StarIOSDK.BluetoothSettingActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:62:9-155
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:62:59-95
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:62:96-143
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:62:19-58
+activity#com.StarMicronics.StarIOSDK.BluetoothSettingHelpActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:63:9-159
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:63:63-99
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:63:100-147
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:63:19-62
+activity#com.StarMicronics.StarIOSDK.UsbSettingActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:64:9-149
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:64:53-89
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:64:90-137
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:64:19-52
+activity#com.StarMicronics.StarIOSDK.PINCodeSettingActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:65:9-153
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:65:57-93
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:65:94-141
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:65:19-56
+activity#com.StarMicronics.StarIOSDK.StarIOSDKDotPOSPrinterLineModeActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:66:9-169
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:66:73-109
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:66:110-157
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:66:19-72
+activity#com.StarMicronics.StarIOSDK.cutDotPrinterActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:67:9-152
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:67:56-92
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:67:93-140
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:67:19-55
+activity#com.StarMicronics.StarIOSDK.kanjiTextFormatingDotPrinterActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:68:9-167
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:68:71-107
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:68:108-155
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:68:19-70
+activity#com.StarMicronics.StarIOSDK.textFormatingDotPrinterActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:69:9-162
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:69:66-102
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:69:103-150
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:69:19-65
+activity#com.StarMicronics.StarIOSDK.LineModeforImpactDotMatrixHelpActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:70:9-169
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:70:73-109
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:70:110-157
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:70:19-72
+activity#com.StarMicronics.StarIOSDK.simplifiedchineseTextFormatingActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:71:9-169
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:71:73-109
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:71:110-157
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:71:19-72
+activity#com.StarMicronics.StarIOSDK.simplifiedchineseTextFormatingDotPrinterActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:72:9-179
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:72:83-119
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:72:120-167
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:72:19-82
+activity#com.StarMicronics.StarIOSDK.traditionalchineseTextFormatingActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:73:9-170
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:73:74-110
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:73:111-158
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:73:19-73
+activity#com.StarMicronics.StarIOSDK.traditionalchineseTextFormatingDotPrinterActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:74:9-180
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:74:84-120
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:74:121-168
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:74:19-83
+activity#com.StarMicronics.StarIOSDK.SampleReciptActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:75:9-151
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:75:55-91
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:75:92-139
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:75:19-54
+activity#com.StarMicronics.StarIOSDK.textFormattingSelectLanguageActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:76:9-167
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:76:71-107
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:76:108-155
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:76:19-70
+activity#com.StarMicronics.StarIOSDK.textFormatingUTF8Activity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:77:9-156
+	android:screenOrientation
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:77:60-96
+	android:windowSoftInputMode
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:77:97-144
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:77:19-59
+activity#com.StarMicronics.StarIOSDK.ProxiPRNTActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:78:9-63
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:78:19-51
+activity#com.StarMicronics.StarIOSDK.ProxiPRNTDeviceSelectActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:79:9-75
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:79:19-63
+activity#com.StarMicronics.StarIOSDK.ProxiPRNTDeviceSettingsActivity
+ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:80:9-77
+	android:name
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml:80:19-65
+uses-sdk
+INJECTED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml
+INJECTED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml
+INJECTED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml
+INJECTED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml
+		INJECTED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml
+		ADDED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml
+		INJECTED from C:\as_projects\Passport\starIOSDK\src\main\AndroidManifest.xml

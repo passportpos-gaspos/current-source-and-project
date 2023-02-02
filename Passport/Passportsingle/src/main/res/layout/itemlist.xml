@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="@drawable/selected_back"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/TableLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp" >
+
+        <TableRow
+            android:id="@+id/TableRow01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/prod_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:padding="1dip"
+                android:text="Name"
+                android:singleLine="true"
+                android:textAppearance="@style/textLayoutAppearance"
+                android:textColor="#000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/prod_pricenum"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="1dip"
+                android:text="$12.95"
+                android:textAppearance="@style/textLayoutAppearance"
+                android:textColor="#000000" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/prod_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:padding="1dip"
+                android:singleLine="true"
+                android:text="This is an old system."
+                android:textAppearance="@style/textLayoutAppearance"
+                android:textColor="#000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="1dip"
+                android:text="Available: 0"
+                android:textAppearance="@style/textLayoutAppearance"
+                android:textColor="#000000" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true" >
+
+            <TextView
+                android:id="@+id/barcode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:padding="1dip"
+                android:text="10010110"
+                android:textAppearance="@style/textLayoutAppearance"
+                android:textColor="#000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/catagory"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="1dip"
+                android:text="catagory"
+                android:textAppearance="@style/textLayoutAppearance"
+                android:textColor="#000000" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

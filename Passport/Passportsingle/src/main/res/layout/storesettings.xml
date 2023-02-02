@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/borderMarginFull"
+        android:background="@drawable/border"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/storename"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Store Name"
+                    android:singleLine="true"
+                    android:textAppearance="@style/textLayoutAppearance" >
+
+                    <requestFocus />
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/address"
+                    android:singleLine="false" 
+                    android:lines="2"
+                    android:inputType="textPostalAddress"
+                    android:textAppearance="@style/textLayoutAppearance" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/phonenumber"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textAppearance="@style/textLayoutAppearance" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/emailaddress"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textAppearance="@style/textLayoutAppearance" />
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/website"
+                    android:singleLine="true"
+                    android:textAppearance="@style/textLayoutAppearance" />
+
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/currencysym"
+                    android:singleLine="true"
+                    android:textAppearance="@style/textLayoutAppearance" />
+
+                <CheckBox
+                    android:id="@+id/clearSale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Clear Sale after transaction completes."
+                    android:textAppearance="@style/textLayoutAppearance" 
+                    android:checked="true"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Save Settings"
+                    android:textAppearance="@style/textLayoutAppearance" >
+                </Button>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

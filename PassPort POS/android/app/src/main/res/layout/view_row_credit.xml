@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/invoice_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:text="123456"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_weight="1"
+            android:textColor="@color/txtdark"
+            android:textSize="@dimen/title_txt" />
+
+        <TextView
+            android:id="@+id/date_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:text="MMDDYY HHMMSS"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_weight="2"
+            android:textColor="@color/txtdark"
+            android:textSize="@dimen/title_txt" />
+
+        <TextView
+            android:id="@+id/amount_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:text="$00.00"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_weight="1.2"
+            android:textColor="@color/txtdark"
+            android:textSize="@dimen/title_txt" />
+
+        <TextView
+            android:id="@+id/tip_amount_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:text="$00.00"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_weight="1"
+            android:textColor="@color/txtdark"
+            android:textSize="@dimen/title_txt" />
+
+        <TextView
+            android:id="@+id/card_type_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:text="Credit"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_weight="1"
+            android:textColor="@color/txtdark"
+            android:textSize="@dimen/title_txt" />
+
+        </LinearLayout>
+
+</LinearLayout>

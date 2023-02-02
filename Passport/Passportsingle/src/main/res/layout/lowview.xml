@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/searchbarroot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="3dip"
+        android:layout_marginRight="5dp"
+        android:baselineAligned="false" >
+
+        <Button
+            android:id="@+id/lowMinus"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:text="-"
+            android:textAppearance="@style/textLayoutAppearanceBigger"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/lowfield"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:inputType="number"
+            android:singleLine="true"
+            android:text="0"
+            android:textAppearance="@style/textLayoutAppearance" >
+        </EditText>
+
+        <Button
+            android:id="@+id/lowPlus"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:text="+"
+            android:textAppearance="@style/textLayoutAppearanceBigger"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+</LinearLayout>

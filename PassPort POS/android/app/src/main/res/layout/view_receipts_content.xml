@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<merge xmlns:android="http://schemas.android.com/apk/res/android">-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+
+        >
+    <LinearLayout
+        android:id="@+id/print_options_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        android:clickable="true"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:layout_gravity="center|center_vertical|center_horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_setting_clr"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:text="@string/txt_print_options"/>
+
+        <ImageView
+            android:id="@+id/print_options_expander_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/ic_expand_more_48dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/print_options_detail_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:layout_gravity="center|center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/msg_print_options"/>
+
+        <RadioGroup
+            android:id="@+id/print_options_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/option_10_dollars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="@string/txt_10_dollars"/>
+
+            <RadioButton
+                android:id="@+id/option_20_dollars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="@string/txt_20_dollars"/>
+
+            <RadioButton
+                android:id="@+id/option_30_dollars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="@string/txt_30_dollars"/>
+
+            <RadioButton
+                android:id="@+id/option_always"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="@string/txt_always"/>
+        </RadioGroup>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="18dp"
+            android:text="@string/txt_save_option"
+            android:textAppearance="@style/textLayoutAppearance"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_blue"/>
+    </LinearLayout>
+</LinearLayout>
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+
+        >
+    <LinearLayout
+        android:id="@+id/receipt_header_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:clickable="true"
+        android:layout_gravity="center|center_vertical|center_horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_setting_clr"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:text="@string/txt_receipt_header"/>
+
+        <ImageView
+            android:id="@+id/receipt_header_expander_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/ic_expand_more_48dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/receipt_header_detail_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:layout_gravity="center|center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/store_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_store_name"
+            android:enabled="false"
+            android:singleLine="true"
+            android:textColor="@color/txt_setting_clr"
+
+            android:gravity="center|center_vertical|center_horizontal"
+            android:layout_gravity="center|center_vertical|center_horizontal"
+            android:textAppearance="@style/textLayoutAppearance" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/address_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_address"
+            android:enabled="false"
+            android:singleLine="false"
+            android:textColor="@color/txt_setting_clr"
+            android:gravity="center|center_vertical|center_horizontal"
+            android:layout_gravity="center|center_vertical|center_horizontal"
+            android:lines="2"
+            android:inputType="textPostalAddress"
+            android:textAppearance="@style/textLayoutAppearance" />
+
+        <EditText
+            android:id="@+id/phone_number_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_phone_number"
+            android:inputType="phone"
+            android:gravity="center|center_vertical|center_horizontal"
+            android:layout_gravity="center|center_vertical|center_horizontal"
+            android:enabled="false"
+            android:singleLine="true"
+            android:textColor="@color/txt_setting_clr"
+            android:textAppearance="@style/textLayoutAppearance" />
+
+        <EditText
+            android:id="@+id/email_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_email_address"
+            android:inputType="textEmailAddress"
+            android:gravity="center|center_vertical|center_horizontal"
+            android:layout_gravity="center|center_vertical|center_horizontal"
+            android:enabled="false"
+            android:singleLine="true"
+            android:textColor="@color/txt_setting_clr"
+            android:textAppearance="@style/textLayoutAppearance" />
+
+        <EditText
+            android:id="@+id/website_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_website_address"
+            android:enabled="false"
+            android:singleLine="true"
+            android:textColor="@color/txt_setting_clr"
+            android:gravity="center|center_vertical|center_horizontal"
+            android:layout_gravity="center|center_vertical|center_horizontal"
+            android:textAppearance="@style/textLayoutAppearance" />
+
+        <CheckBox
+            android:id="@+id/receipt_header_type_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/msg_receipt_header2"
+
+            android:gravity="center|center_vertical|center_horizontal"
+            android:layout_gravity="center|center_vertical|center_horizontal"
+            android:textAppearance="@style/textLayoutAppearance"
+            android:checked="true" />
+
+
+        <!-- receipt 2 -->
+
+        <LinearLayout
+            android:id="@+id/receipt_header_detail_linear_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+        <EditText
+            android:id="@+id/store_name_edit_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_store_name"
+            android:singleLine="true"
+            android:textAppearance="@style/textLayoutAppearance" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/address_edit_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_address"
+            android:singleLine="false"
+            android:lines="2"
+            android:inputType="textPostalAddress"
+            android:textAppearance="@style/textLayoutAppearance" />
+
+        <EditText
+            android:id="@+id/phone_number_edit_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_phone_number"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textAppearance="@style/textLayoutAppearance" />
+
+        <EditText
+            android:id="@+id/email_edit_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_email_address"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textAppearance="@style/textLayoutAppearance" />
+
+        <EditText
+            android:id="@+id/website_edit_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_website_address"
+            android:singleLine="true"
+            android:textAppearance="@style/textLayoutAppearance" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/receipt_header_save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_gravity="center"
+            android:text="@string/txt_save_header"
+            android:textAppearance="@style/textLayoutAppearance"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_blue"
+            />
+
+    </LinearLayout>
+</LinearLayout>
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+
+        >
+    <LinearLayout
+        android:id="@+id/email_receipt_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:gravity="center_horizontal"
+        android:layout_gravity="center|center_vertical|center_horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textColor="@color/txt_setting_clr"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:text="@string/txt_email_receipt"/>
+
+        <ImageView
+            android:id="@+id/email_receipt_expander_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/ic_expand_more_48dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/email_receipt_detail_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:layout_gravity="center|center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="visible">
+        <Switch
+            android:id="@+id/email_receipt_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+
+            android:gravity="center|center_vertical|center_horizontal"
+            android:layout_gravity="center|center_vertical|center_horizontal"
+            android:text="@string/txt_off"
+            android:textAppearance="@style/textLayoutAppearance"/>
+    </LinearLayout>
+        </LinearLayout>
+<!--</merge>-->
+    </LinearLayout>

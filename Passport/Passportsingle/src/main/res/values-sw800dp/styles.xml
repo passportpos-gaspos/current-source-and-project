@@ -1,0 +1,41 @@
+<resources>
+
+    <style name="textLayoutAppearance" parent="@android:style/TextAppearance.Medium" />
+
+    <style name="textLayoutAppearanceBigger" parent="@android:style/TextAppearance.Large" />
+
+    <style name="receiptLayoutAppearance" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">28px</item>
+    </style>
+
+    <style name="receiptLayoutAppearanceLarge" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">36px</item>
+    </style>
+
+    <style name="textLayoutAppearanceCharge" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="borderMarginFull">
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="borderMarginBottomSide">
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+    </style>
+    
+    <style name="borderMarginLeftSide">
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <style name="borderMarginRightTop">
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+</resources>

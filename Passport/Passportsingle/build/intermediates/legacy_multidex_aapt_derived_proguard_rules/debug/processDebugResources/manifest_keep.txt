@@ -1,0 +1,2 @@
+# Referenced at C:\as_projects\Passport\Passportsingle\build\intermediates\merged_manifests\debug\AndroidManifest.xml:44
+-keep class android.support.multidex.MultiDexApplication { <init>(); }

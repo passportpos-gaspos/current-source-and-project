@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/cashier_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title_txt"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:text="@string/txt_cashier_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:textSize="@dimen/title_txt"
+            android:text="@string/txt_total_number_of_sales"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/total_sales_count_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="end"
+            android:textSize="@dimen/title_txt"
+            android:text="@string/txt_zero"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:textSize="@dimen/title_txt"
+            android:text="@string/txt_total_sales"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/total_sales_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="end"
+            android:textSize="@dimen/title_txt"
+            android:text="@string/txt_price_0"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:textSize="@dimen/title_txt"
+            android:text="@string/txt_total_void"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/total_void_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="end"
+            android:textSize="@dimen/title_txt"
+            android:text="@string/txt_price_0"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:textSize="@dimen/title_txt"
+            android:text="@string/txt_total_returns"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/total_refund_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="end"
+            android:textSize="@dimen/title_txt"
+            android:text="@string/txt_price_0"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:text="@string/txt_tax_1_label"
+        android:textColor="?android:textColorPrimary"
+        android:background="@color/gray_300"/>
+
+    <EditText
+        android:id="@+id/tax_1_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:focusable="false"
+        android:hint="@string/txt_tax_1_name"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textAppearance="@style/textLayoutAppearance" />
+
+    <EditText
+        android:id="@+id/tax_1_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5sp"
+        android:enabled="false"
+        android:focusable="false"
+        android:hint="@string/txt_tax_1_amount_percent"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:textAppearance="@style/textLayoutAppearance" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:text="@string/txt_tax_2_label"
+        android:textColor="?android:textColorPrimary"
+        android:background="@color/gray_300"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_tax_2_name"
+        android:enabled="false"
+        android:focusable="false"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textAppearance="@style/textLayoutAppearance" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:enabled="false"
+        android:focusable="false"
+        android:hint="@string/txt_tax_2_amount_percent"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:textAppearance="@style/textLayoutAppearance" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:text="@string/txt_tax_3_label"
+        android:textColor="?android:textColorPrimary"
+        android:background="@color/gray_300"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:focusable="false"
+        android:hint="@string/txt_tax_3_name"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textAppearance="@style/textLayoutAppearance" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:enabled="false"
+        android:focusable="false"
+        android:hint="@string/txt_tax_3_amount_percent"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:textAppearance="@style/textLayoutAppearance" />
+</merge>

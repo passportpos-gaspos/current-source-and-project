@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item_add_product"
+        android:icon="@drawable/cart_img_icon"
+        android:orderInCategory="0"
+        android:title=""
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/item_search"
+        android:icon="@drawable/search_img_icon"
+        android:orderInCategory="1"
+        android:title="@string/txt_search_item"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom|withText" />
+    <!--android:icon="@android:drawable/ic_menu_search"-->
+    <item
+        android:id="@+id/menu_cashier"
+        android:icon="@drawable/customer_img_icon"
+        android:orderInCategory="2"
+        android:title=""
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/new_order"
+        android:icon="@drawable/plusicon_menu_new_big"
+        android:orderInCategory="3"
+        android:title=""
+        android:visible="false"
+        app:showAsAction="always" />
+    <!--android:icon="@drawable/ic_add_24dp"-->
+
+    <item
+        android:id="@+id/open_new_rec"
+        android:icon="@drawable/open_reciepts_icon"
+        android:orderInCategory="4"
+        android:title=""
+        android:visible="true"
+        app:showAsAction="always"/>
+    <!--<item
+        app:showAsAction="always"
+        android:id="@+id/help"
+        android:orderInCategory="5"
+        android:icon="@drawable/ic_help"
+        android:title="Help"/>-->
+
+    <!--
+    app:actionLayout="@layout/spinnerlayout"
+    app:actionViewClass="android.widget.Spinner"
+    android:actionLayout="@layout/spinnerlayout"
+    android:actionLayout="@layout/view_queue_spinner_dropdown_item"-->
+
+    <!--<item
+        android:id="@+id/menu_cashier"
+        android:icon="@drawable/ic_person_unique_24dp"
+        android:orderInCategory="0"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.Spinner"
+        android:title=""/>-->
+
+</menu>

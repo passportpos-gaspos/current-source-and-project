@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/ll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <TextView
+            android:id="@+id/tender_type_label_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:text="@string/txt_tendered_type"/>
+
+        <TextView
+            android:id="@+id/tender_type_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tender_type_label_text_view"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:text="@string/txt_cash"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tender_type_label_text_view"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:text="@string/txt_amount"/>
+
+        <TextView
+            android:id="@+id/amount_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tender_type_text_view"
+            android:layout_alignLeft="@id/tender_type_text_view"
+            android:layout_alignStart="@id/tender_type_text_view"
+            android:textAllCaps="true"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+</LinearLayout>

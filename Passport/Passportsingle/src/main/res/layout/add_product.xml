@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1" >
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/add_prod_message"
+                android:textAppearance="@style/textLayoutAppearance"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/nameLabel"
+                android:layout_gravity="center|left"
+                android:padding="8dp"
+                android:text="@string/add_prod_name"
+                android:textAppearance="@style/textLayoutAppearance" />
+
+            <EditText
+                android:id="@+id/nameEdit"
+                android:hint="@string/add_prod_name"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textAppearance="@style/textLayoutAppearance" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/descLabel"
+                android:layout_gravity="center|left"
+                android:padding="8dp"
+                android:text="@string/add_prod_desc"
+                android:textAppearance="@style/textLayoutAppearance" />
+
+            <EditText
+                android:id="@+id/descEdit"
+                android:hint="@string/add_prod_desc"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textAppearance="@style/textLayoutAppearance" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/priceLabel"
+                android:layout_gravity="center|left"
+                android:padding="8dp"
+                android:text="@string/price"
+                android:textAppearance="@style/textLayoutAppearance" />
+
+            <EditText
+                android:id="@+id/priceEdit"
+                android:hint="@string/price"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="6"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textAppearance="@style/textLayoutAppearance" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/catagoryLabel"
+                android:layout_gravity="center|left"
+                android:padding="8dp"
+                android:text="@string/add_prod_dept"
+                android:textAppearance="@style/textLayoutAppearance" />
+
+            <Spinner
+                android:id="@+id/catagoryselect"
+                android:padding="8dp"
+                android:textAppearance="@style/textLayoutAppearance" >
+
+                <!-- Preview: listitem=@layout/spiner -->
+            </Spinner>
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

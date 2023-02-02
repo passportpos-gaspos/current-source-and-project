@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+android {
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion 26
+    //buildToolsVersion "29.0.2"
+
+    defaultConfig {
+        applicationId "com.passportsingle"
+        minSdkVersion 14
+        targetSdkVersion 26
+        multiDexEnabled true
+        versionCode 311
+        versionName "3.1.1"
+
+        dexOptions {
+            preDexLibraries = false
+            javaMaxHeapSize "4g" // 2g should be also OK
+        }
+
+
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':starIOSDK')
+
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support:support-v4:26.1.0'
+    //implementation 'com.android.support:appcompat-v7:26.1.0'
+    //implementation 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
+
+    implementation files('libs/activation.jar')
+    implementation files('libs/additionnal.jar')
+    implementation files('libs/commons-codec-1.10.jar')
+    implementation files('libs/customandroidapi.jar')
+    implementation files('libs/ePOS-Print.jar')
+    implementation files('libs/java-json.jar')
+    implementation files('libs/jxl.jar')
+    implementation files('libs/ksoap2-android-assembly-2.6.5-jar-with-dependencies.jar')
+    implementation files('libs/magtek-scra.jar')
+    implementation files('libs/magtek-usb.jar')
+    implementation files('libs/mail.jar')
+    //implementation files('libs/MPSWebServiceJavaSDK.jar')
+
+
+    //implementation files('libs/POSSDKForAndroid.jar')
+    //implementation files('libs/StarIOPort3.1.jar')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+
+
+}

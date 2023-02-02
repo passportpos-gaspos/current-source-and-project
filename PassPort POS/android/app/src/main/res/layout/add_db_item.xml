@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" >
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="center|start"
+                android:padding="6dp"
+                android:text="@string/txt_product_name_label"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/nameEdit"
+                android:hint="@string/txt_product_name"
+                android:inputType="text"
+                android:enabled="false"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="center|start"
+                android:padding="6dp"
+                android:text="@string/txt_description_label"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/descEdit"
+                android:hint="@string/txt_description"
+                android:inputType="text"
+                android:enabled="false"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="center|start"
+                android:padding="6dp"
+                android:text="@string/txt_price_label"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/priceEdit"
+                android:hint="@string/txt_price"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="6"
+                android:enabled="false"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="center|start"
+                android:padding="6dp"
+                android:text="@string/txt_cost_label"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/costEdit"
+                android:hint="@string/txt_cost"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:enabled="false"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="center|start"
+                android:padding="6dp"
+                android:text="@string/txt_on_hand_label"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/quantityEdit"
+                android:hint="@string/txt_on_hand"
+                android:inputType="number"
+                android:enabled="false"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_gravity="center|start"
+                android:padding="6dp"
+                android:text="@string/txt_low_amount_label"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/lowFilter"
+                android:hint="@string/txt_low_amount"
+                android:inputType="number"
+                android:enabled="false"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow android:baselineAligned="false" >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:padding="6dp"
+                android:text="@string/txt_department_label"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:id="@+id/catagoryselect"
+                android:enabled="false"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="center|start"
+                android:padding="6dp"
+                android:text="@string/txt_barcode_label"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/barcode"
+                android:hint="@string/txt_barcode"
+                android:inputType="text"
+                android:enabled="false"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/scanRow"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/scanButton"
+                android:layout_span="2"
+                android:text="@string/txt_scan_barcode"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="center|start"
+                android:padding="6dp"
+                android:text="@string/txt_sale_price_label"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/salePriceEdit"
+                android:hint="@string/txt_sale_price"
+                android:inputType="numberDecimal"
+                android:enabled="false"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="center|start"
+                android:padding="6dp"
+                android:text="@string/txt_sale_start_date_label"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/saleStartEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="@string/txt_disabled"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="center|start"
+                android:padding="6dp"
+                android:text="@string/txt_sale_end_date_label"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/saleEndEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="@string/txt_disabled"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

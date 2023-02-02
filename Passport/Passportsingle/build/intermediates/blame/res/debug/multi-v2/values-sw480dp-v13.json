@@ -1,0 +1,45 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\as_projects\\Passport\\Passportsingle\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw480dp-v13\\values-sw480dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\as_projects\\Passport\\Passportsingle\\src\\main\\res\\values-sw480dp\\dimens.xml",
+                    "from": {
+                        "startLines": "3,4,5,8,6,7,14,13,12,11,10,9",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "89,147,203,337,247,290,615,562,506,464,425,383",
+                        "endColumns": "57,55,43,45,42,46,50,52,55,41,38,41",
+                        "endOffsets": "142,198,242,378,285,332,661,610,557,501,459,420"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,113,169,213,259,302,349,400,453,509,551,590",
+                        "endColumns": "57,55,43,45,42,46,50,52,55,41,38,41",
+                        "endOffsets": "108,164,208,254,297,344,395,448,504,546,585,627"
+                    }
+                },
+                {
+                    "source": "C:\\as_projects\\Passport\\Passportsingle\\src\\main\\res\\values-sw480dp\\styles.xml",
+                    "from": {
+                        "startLines": "22,18,28,34,6,10,2,4,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "768,664,1005,1234,200,352,17,105,509",
+                        "endLines": "26,20,32,38,8,12,2,4,16",
+                        "endColumns": "12,12,12,12,12,12,86,93,12",
+                        "endOffsets": "995,762,1228,1456,346,503,99,194,658"
+                    },
+                    "to": {
+                        "startLines": "14,19,22,27,32,35,38,39,40",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "632,864,967,1195,1422,1573,1729,1815,1908",
+                        "endLines": "18,21,26,31,34,37,38,39,42",
+                        "endColumns": "12,12,12,12,12,12,85,92,12",
+                        "endOffsets": "859,962,1190,1417,1568,1724,1810,1903,2057"
+                    }
+                }
+            ]
+        }
+    ]
+}

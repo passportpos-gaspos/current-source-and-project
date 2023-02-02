@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_root_linear_layout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/nav_icon_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:paddingLeft="12dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_sync_24dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="2dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1">
+
+    <TextView
+        android:id="@+id/nav_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:attr/listPreferredItemHeightSmall"
+        android:layout_gravity="center_vertical"
+        android:textAppearance="?attr/navTextAppearance"
+        android:paddingLeft="12dp"
+        android:gravity="center_vertical"
+        android:text="Logout"
+        android:textSize="@dimen/menu_list_textsize"
+        android:textColor="@android:color/black"
+        android:textAlignment="viewStart"
+        tools:ignore="RtlCompat" />
+
+        <!--android:textSize="26sp"-->
+
+    <TextView
+        android:id="@+id/nav_email_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingBottom="18dp"
+        android:maxLines="1"
+        android:textSize="16sp"
+        android:layout_marginTop="-10dp"
+        android:text="example@example.com"
+        android:visibility="gone"
+        android:textColor="#999999"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/nav_group_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" />
+</LinearLayout>

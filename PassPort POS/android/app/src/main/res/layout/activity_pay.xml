@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="600dp"
+    android:padding="24dp"
+    android:background="@color/gray_200">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?android:textColorPrimary"
+            android:layout_margin="5dp"
+            android:textSize="@dimen/sys_button_text_big"
+            android:text="@string/txt_amount_due_label"/>
+        <TextView
+            android:id="@+id/amount_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="@dimen/sys_button_text_big"
+            android:layout_margin="5dp"
+            android:text="$00.00"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="?android:textColorPrimary"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:text="@string/txt_credit_card" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/swipe_status_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_circle_red_24dp" />
+
+        <TextView
+            android:id="@+id/swipe_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/swipe_status_image_view"
+            android:layout_toEndOf="@id/swipe_status_image_view"
+            android:layout_alignTop="@id/swipe_status_image_view"
+            android:layout_alignBottom="@id/swipe_status_image_view"
+            android:gravity="center_vertical"
+            android:enabled="false"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:textColor="@color/tender_button_text"
+            android:text="@string/txt_swipe" />
+        <Button
+            android:id="@+id/credit_button"
+            android:layout_width="@dimen/tender_button"
+            android:layout_height="@dimen/tender_button"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/swipe_text_view"
+            android:layout_alignTop="@id/swipe_status_image_view"
+            android:gravity="center"
+            android:focusable="false"
+            android:textColor="@color/light_blue_500"
+            android:textSize="18sp"
+            android:text="@string/txt_credit"
+            android:visibility="visible"
+            android:background="@drawable/button_light_gray" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="?android:textColorPrimary"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:text="@string/txt_cash" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/amount_1_button"
+            android:layout_width="@dimen/tender_button"
+            android:layout_height="@dimen/tender_button"
+            android:layout_margin="5dp"
+            android:focusable="false"
+            android:textColor="@color/light_blue_500"
+            android:textSize="18sp"
+            android:text="$17.45"
+            android:background="@drawable/button_light_gray" />
+
+        <Button
+            android:id="@+id/amount_2_button"
+            android:layout_width="@dimen/tender_button"
+            android:layout_height="@dimen/tender_button"
+            android:layout_margin="5dp"
+            android:focusable="false"
+            android:textColor="@color/light_blue_500"
+            android:textSize="18sp"
+            android:text="$20.00"
+            android:background="@drawable/button_light_gray" />
+
+        <Button
+            android:id="@+id/amount_3_button"
+            android:layout_width="@dimen/tender_button"
+            android:layout_height="@dimen/tender_button"
+            android:layout_margin="5dp"
+            android:focusable="false"
+            android:textColor="@color/light_blue_500"
+            android:textSize="18sp"
+            android:text="$40.00"
+            android:background="@drawable/button_light_gray" />
+
+        <Button
+            android:id="@+id/amount_other_button"
+            android:layout_width="@dimen/tender_button"
+            android:layout_height="@dimen/tender_button"
+            android:layout_margin="5dp"
+            android:focusable="false"
+            android:textColor="@color/light_blue_500"
+            android:textSize="18sp"
+            android:text="@string/txt_cash_tender"
+            android:background="@drawable/button_light_gray" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="?android:textColorPrimary"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:text="@string/txt_other" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/check_button"
+            android:layout_width="@dimen/tender_button"
+            android:layout_height="@dimen/tender_button"
+            android:layout_margin="5dp"
+            android:focusable="false"
+            android:textColor="@color/light_blue_500"
+            android:textSize="18sp"
+            android:text="@string/txt_check"
+            android:background="@drawable/button_light_gray" />
+
+        <Button
+            android:id="@+id/other_button"
+            android:layout_width="@dimen/tender_button"
+            android:layout_height="@dimen/tender_button"
+            android:layout_margin="5dp"
+            android:focusable="false"
+            android:textColor="@color/light_blue_500"
+            android:textSize="18sp"
+            android:text="@string/txt_other"
+            android:background="@drawable/button_light_gray" />
+
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

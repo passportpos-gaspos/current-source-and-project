@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.StarMicronics.StarIOSDK"
+    android:versionCode="13"
+    android:versionName="3.7" > <!-- If the following tag define, android device 3.0 and earlier can not install at google play -->
+    <!-- uses-feature android:name="android.hardware.usb.host" / -->
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="28" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+</manifest>

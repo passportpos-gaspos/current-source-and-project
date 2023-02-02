@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        card_view:cardCornerRadius="3dp">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:stretchColumns="1" >
+        <TableRow>
+            <TextView
+                android:layout_gravity="center|start"
+                android:padding="6dp"
+                android:text="@string/txt_user_email_label"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <EditText
+                android:id="@+id/account_email_edit_text"
+                android:hint="@string/txt_user_email"
+                android:inputType="textEmailAddress"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:enabled="false"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="center|start"
+                android:padding="6dp"
+                android:text="@string/txt_device_key_label"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/device_key_edit_text"
+                android:hint="@string/txt_device_key"
+                android:inputType="textPassword"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="center|start"
+                android:padding="6dp"
+                android:text="@string/txt_terminal_name_label"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/terminal_name_edit_text"
+                android:hint="@string/txt_terminal_name"
+                android:inputType="text"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="center|start"
+                android:padding="6dp"
+                android:text="@string/txt_submit_label"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_save" />
+        </TableRow>
+    </TableLayout>
+</android.support.v7.widget.CardView>
+</LinearLayout>

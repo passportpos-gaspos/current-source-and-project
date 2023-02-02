@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="int_grid_num_columns">3</integer>
+    <string name="txt_reso_inet">Inet device 720 by 1024 mdpi</string>
+</resources>

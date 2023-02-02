@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/topitembg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="400dp"
+    android:minWidth="400dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/topitembg"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/back_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:visibility="gone"
+        android:text="@string/txt_back"
+        android:src="@drawable/ic_back_24dp"
+        android:textColor="@android:color/white"
+        />   <!--DTS-->
+
+    <TextView
+        android:id="@+id/item_name_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/itemtexttop"
+        android:text="@string/txt_item_name"
+        android:textSize="24sp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_image_view"
+        android:layout_width="@dimen/tender_button"
+        android:layout_height="@dimen/tender_button"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone"
+        android:background="@color/gray_400"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="50dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:textSize="25dp"
+                android:text="@string/txt_quantity" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/item_quantity_minus_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/txt_dash"
+                    android:textAppearance="@style/textLayoutAppearance"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_white_gray_border"/>
+
+                <EditText
+                    android:id="@+id/item_quantity_edit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textAppearance="@style/textLayoutAppearance" />
+
+                <Button
+                    android:id="@+id/item_quantity_plus_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/txt_plus"
+                    android:textAppearance="@style/textLayoutAppearance"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_white_gray_border" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/item_set_quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                android:text="@string/txt_set_quantity"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_blue" />
+
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:padding="20dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+        <ImageView
+            android:id="@+id/item_add_modifier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_rec_fill"
+            android:text="@string/txt_modifier"
+            android:padding="10dp"
+            android:src="@drawable/ic_modifier_list_sel" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+        <ImageView
+            android:id="@+id/item_add_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_item_discount"
+            android:padding="10dp"
+
+            android:background="@drawable/border_rect_blue"
+            android:src="@drawable/ic_discount_unsel" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+        <ImageView
+            android:id="@+id/item_add_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/border_rect_blue"
+            android:text="@string/txt_add_note"
+            android:textColor="@android:color/white"
+            android:src="@drawable/ic_noteadd_unsel" />
+</LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+        <ImageView
+            android:id="@+id/item_remove_tax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/border_rect_blue"
+            android:text="@string/txt_remove_tax"
+            android:textColor="@android:color/white"
+            android:src="@drawable/ic_taxbtn_unsel" />
+            </LinearLayout>
+
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/edit_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <FrameLayout
+        android:id="@+id/content_fragment_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+        <include
+        layout="@layout/view_grid"
+        android:visibility="gone"
+        android:id="@+id/grid_layout"/>
+    <!--<LinearLayout
+        android:id="@+id/notll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.pos.passport.fragment.NoteFragment"
+
+        />
+   </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tenpadll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.pos.passport.fragment.TenPadFragment"
+        /></LinearLayout>
+-->
+</LinearLayout>
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/borderMarginFull"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/back_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="@string/txt_back"
+        android:textColor="@android:color/white"
+        android:background="@drawable/ic_back_24dp"/>
+
+    <TextView
+        android:id="@+id/item_name_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:text="@string/txt_item_name"
+        android:textSize="25dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_image_view"
+        android:layout_width="@dimen/tender_button"
+        android:layout_height="@dimen/tender_button"
+        android:layout_marginLeft="20dp"
+        android:background="@color/gray_400"/>
+
+    <TableLayout
+        android:id="@+id/item_edit_table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false" >
+
+            <TextView
+                android:id="@+id/quantity_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:textSize="25dp"
+                android:text="@string/txt_quantity" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/item_quantity_minus_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/txt_dash"
+                    android:textAppearance="@style/textLayoutAppearance"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_white_gray_border"/>
+
+                <EditText
+                    android:id="@+id/item_quantity_edit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textAppearance="@style/textLayoutAppearance" />
+
+                <Button
+                    android:id="@+id/item_quantity_plus_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/txt_plus"
+                    android:textAppearance="@style/textLayoutAppearance"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_white_gray_border" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/item_set_quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                android:text="@string/txt_set_quantity"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_blue" />
+
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/item_add_note"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:text="@string/txt_add_note"
+            android:textColor="@android:color/white"
+            android:background="@color/pos_button_color" />
+
+        <Button
+            android:id="@+id/item_add_discount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:text="@string/txt_item_discount"
+            android:textColor="@android:color/white"
+            android:background="@color/pos_button_color" />
+
+        <Button
+            android:id="@+id/item_add_modifier"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:text="@string/txt_modifier"
+            android:textColor="@android:color/white"
+            android:background="@color/pos_button_color" />
+
+        <Button
+            android:id="@+id/item_remove_tax"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:text="@string/txt_remove_tax"
+            android:textColor="@android:color/white"
+            android:background="@color/pos_button_color" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/view_grid"
+        android:id="@+id/grid_layout"/>
+
+
+</LinearLayout>
+
+   -->
